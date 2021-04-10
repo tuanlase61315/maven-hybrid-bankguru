@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.bankguru.login.TC_01_Login_And_Register">
+        <methods>
+          <include name="Login_01_Register_By_Email"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.bankguru.login.TC_01_Login_And_Register -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

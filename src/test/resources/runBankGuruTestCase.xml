@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BankGuru" parallel="false">
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.AllureTestListener" />
+		<listener class-name="reportConfig.ExtentListenerV4" />
+<!-- 		<listener class-name="reportConfig.ExtentListenerV3" /> -->
+<!-- 		<listener class-name="reportConfig.ExtentReportListenerVersion2" /> -->
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<parameter name="url" value="http://demo.guru99.com/v4/index.php" />
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.bankguru.common.Common_01_Register" />
+			<class name="com.bankguru.login.TC_01_Login_And_Register" />
+			
+		</classes>
+	</test>
+</suite> 

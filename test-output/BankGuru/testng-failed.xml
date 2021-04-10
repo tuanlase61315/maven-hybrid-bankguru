@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BankGuru]">
+  <parameter name="url" value="http://demo.guru99.com/v4/index.php"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.AllureTestListener"/>
+    <listener class-name="reportConfig.ExtentListenerV4"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bankguru.login.TC_01_Login_And_Register">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="Login_01_Register_By_Email"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.bankguru.login.TC_01_Login_And_Register -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [BankGuru] -->

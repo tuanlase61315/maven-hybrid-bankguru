@@ -1,0 +1,10 @@
+[INFO ] [2021-04-11 01:00:10,933] Register - Step 01: Open Login Page
+[INFO ] [2021-04-11 01:00:10,942] Register - Step 02: Click here link
+[INFO ] [2021-04-11 01:00:13,373] Register - Step 03: Enter Email Textbox
+[INFO ] [2021-04-11 01:00:13,524] Register - Step 04: Click Submit button
+[INFO ] [2021-04-11 01:00:14,252] Register - Step 05: Open Login Page
+[INFO ] [2021-04-11 01:00:16,199] Register - Step 06: Enter UserID in Textbox with value: mngr319461
+[INFO ] [2021-04-11 01:00:16,330] Register - Step 07: Enter Password in Textbox with value: hYvajus
+[INFO ] [2021-04-11 01:00:16,467] Register - Step 08: Click Login button
+[INFO ] [2021-04-11 01:00:17,959] Register - Step 09: Verify homepage message after login successfull
+[INFO ] [2021-04-11 01:00:17,998]  -------------------------- PASSED -------------------------- 

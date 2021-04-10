@@ -1,0 +1,68 @@
+[INFO ] [2021-04-10 22:46:59,517] Register - Step 01: Open Login Page
+[INFO ] [2021-04-10 22:46:59,523] Register - Step 02: Click here link
+[INFO ] [2021-04-10 22:47:01,524] Register - Step 03: Enter Email Textbox
+[INFO ] [2021-04-10 22:47:01,673] Register - Step 04: Click Submit button
+[INFO ] [2021-04-10 22:47:03,089] Register - Step 05: Open Login Page
+[INFO ] [2021-04-10 22:47:04,727] Register - Step 06: Enter UserID in Textbox with value: mngr319437
+[INFO ] [2021-04-10 22:47:04,867] Register - Step 07: Enter Password in Textbox with value: etEvUpu
+[INFO ] [2021-04-10 22:47:04,989] Register - Step 08: Click Login button
+[INFO ] [2021-04-10 22:47:06,580] OS name = windows 10
+[INFO ] [2021-04-10 22:47:07,291] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-04-10 23:01:00,835] Register - Step 01: Open Login Page
+[INFO ] [2021-04-10 23:01:00,842] Register - Step 02: Click here link
+[INFO ] [2021-04-10 23:01:03,395] Register - Step 03: Enter Email Textbox
+[INFO ] [2021-04-10 23:01:03,545] Register - Step 04: Click Submit button
+[INFO ] [2021-04-10 23:01:04,409] Register - Step 05: Open Login Page
+[INFO ] [2021-04-10 23:01:05,909] Register - Step 06: Enter UserID in Textbox with value: mngr319444
+[INFO ] [2021-04-10 23:01:06,042] Register - Step 07: Enter Password in Textbox with value: rYzUbyd
+[INFO ] [2021-04-10 23:01:06,162] Register - Step 08: Click Login button
+[INFO ] [2021-04-10 23:01:07,994] Register - Step 09: Verify homepage message after login successfull
+[INFO ] [2021-04-10 23:01:08,022]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-10 23:01:08,083] OS name = windows 10
+[INFO ] [2021-04-10 23:01:08,775] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-04-10 23:06:41,077] OS name = windows 10
+[INFO ] [2021-04-10 23:06:41,078] 
+[INFO ] [2021-04-10 23:10:00,134] OS name = windows 10
+[INFO ] [2021-04-10 23:10:00,135] 
+[INFO ] [2021-04-11 00:45:30,982] OS name = windows 10
+[INFO ] [2021-04-11 00:45:30,982] 
+[INFO ] [2021-04-11 00:46:33,108] OS name = windows 10
+[INFO ] [2021-04-11 00:46:33,109] 
+[INFO ] [2021-04-11 00:47:55,363] OS name = windows 10
+[INFO ] [2021-04-11 00:47:55,363] 
+[INFO ] [2021-04-11 00:49:56,109] Register - Step 01: Open Login Page
+[INFO ] [2021-04-11 00:49:56,117] Register - Step 02: Click here link
+[INFO ] [2021-04-11 00:49:59,167] Register - Step 03: Enter Email Textbox
+[INFO ] [2021-04-11 00:49:59,316] Register - Step 04: Click Submit button
+[INFO ] [2021-04-11 00:50:00,467] Register - Step 05: Open Login Page
+[INFO ] [2021-04-11 00:50:01,913] Register - Step 06: Enter UserID in Textbox with value: mngr319459
+[INFO ] [2021-04-11 00:50:02,050] Register - Step 07: Enter Password in Textbox with value: bAvUpEg
+[INFO ] [2021-04-11 00:50:02,175] Register - Step 08: Click Login button
+[INFO ] [2021-04-11 00:50:03,629] Register - Step 09: Verify homepage message after login successfull
+[INFO ] [2021-04-11 00:50:03,654]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-11 00:50:04,395] OS name = windows 10
+[INFO ] [2021-04-11 00:50:04,395] 
+[INFO ] [2021-04-11 00:57:35,714] OS name = windows 10
+[INFO ] [2021-04-11 00:57:35,715] 
+[INFO ] [2021-04-11 00:57:57,487] Register - Step 01: Open Login Page
+[INFO ] [2021-04-11 00:57:57,497] Register - Step 02: Click here link
+[INFO ] [2021-04-11 00:58:01,006] Register - Step 03: Enter Email Textbox
+[INFO ] [2021-04-11 00:58:01,158] Register - Step 04: Click Submit button
+[INFO ] [2021-04-11 00:58:01,957] Register - Step 05: Open Login Page
+[INFO ] [2021-04-11 00:58:03,755] Register - Step 06: Enter UserID in Textbox with value: mngr319460
+[INFO ] [2021-04-11 00:58:03,889] Register - Step 07: Enter Password in Textbox with value: mezadYm
+[INFO ] [2021-04-11 00:58:04,025] Register - Step 08: Click Login button
+[INFO ] [2021-04-11 00:58:05,840] Register - Step 09: Verify homepage message after login successfull
+[INFO ] [2021-04-11 00:58:05,874]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-11 00:58:06,581] OS name = windows 10
+[INFO ] [2021-04-11 00:58:06,582] 
+[INFO ] [2021-04-11 01:00:10,933] Register - Step 01: Open Login Page
+[INFO ] [2021-04-11 01:00:10,942] Register - Step 02: Click here link
+[INFO ] [2021-04-11 01:00:13,373] Register - Step 03: Enter Email Textbox
+[INFO ] [2021-04-11 01:00:13,524] Register - Step 04: Click Submit button
+[INFO ] [2021-04-11 01:00:14,252] Register - Step 05: Open Login Page
+[INFO ] [2021-04-11 01:00:16,199] Register - Step 06: Enter UserID in Textbox with value: mngr319461
+[INFO ] [2021-04-11 01:00:16,330] Register - Step 07: Enter Password in Textbox with value: hYvajus
+[INFO ] [2021-04-11 01:00:16,467] Register - Step 08: Click Login button
+[INFO ] [2021-04-11 01:00:17,959] Register - Step 09: Verify homepage message after login successfull
+[INFO ] [2021-04-11 01:00:17,998]  -------------------------- PASSED -------------------------- 
