@@ -12,13 +12,17 @@
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.bankguru.login.TC_01_Login_And_Register">
+      <class name="com.bankguru.customer.Customer_02_Edit_Customer">
         <methods>
-          <include name="BeforeClass"/>
-          <include name="Login_01_Register_By_Email"/>
           <include name="afterClass"/>
+          <include name="Edit_Customer_06_Verify_Telephone_Field"/>
+          <include name="Edit_Customer_04_Verify_State_Field"/>
+          <include name="beforeClass"/>
+          <include name="Edit_Customer_05_Verify_PIN_Field"/>
+          <include name="Edit_Customer_07_Verify_Email_Field"/>
+          <include name="Edit_Customer_03_Verify_City_Field"/>
         </methods>
-      </class> <!-- com.bankguru.login.TC_01_Login_And_Register -->
+      </class> <!-- com.bankguru.customer.Customer_02_Edit_Customer -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [BankGuru] -->

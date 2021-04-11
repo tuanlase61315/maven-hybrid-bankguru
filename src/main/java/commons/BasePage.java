@@ -1,6 +1,7 @@
 package commons;
 
 import java.io.File;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -35,6 +36,22 @@ public class BasePage {
 	private Alert alert;
 	private long longTimeout = 10;
 	private Log log;
+	final String OLD_FORMAT = "MM/dd/yyyy";
+	final String NEW_FORMAT = "yyyy-MM-dd";
+	
+	
+	public String newFormatDate(String oldDateString) {
+		SimpleDateFormat sdf = new SimpleDateFormat(OLD_FORMAT);
+		Date d = null;
+		try {
+			d = sdf.parse(oldDateString);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		sdf.applyPattern(NEW_FORMAT);
+		return sdf.format(d);
+	}
 
 	public static BasePage getBasePage() {
 		return new BasePage();
@@ -105,8 +122,8 @@ public class BasePage {
 		return explicitWait.until(ExpectedConditions.alertIsPresent());
 	}
 
-	public void acceptAlert(WebDriver dirver) {
-		alert = waitAlertPresence(dirver);
+	public void acceptAlert(WebDriver driver) {
+		alert = waitAlertPresence(driver);
 		alert.accept();
 	}
 
@@ -115,9 +132,9 @@ public class BasePage {
 		alert.dismiss();
 	}
 
-	public void getTextAlert(WebDriver driver) {
+	public String getTextAlert(WebDriver driver) {
 		alert = waitAlertPresence(driver);
-		alert.getText();
+		return alert.getText();
 	}
 
 	public void sendkeyToAlert(WebDriver driver, String value) {
@@ -169,6 +186,10 @@ public class BasePage {
 
 	public WebElement getElement(WebDriver driver, String locator) {
 		return driver.findElement(getByXpath(locator));
+	}
+	
+	public WebElement getElement(WebDriver driver, String locator, String... values) {
+		return driver.findElement(getByXpath(getDynamicLocator(locator, values)));
 	}
 
 	public List<WebElement> getElements(WebDriver driver, String locator) {
@@ -237,6 +258,10 @@ public class BasePage {
 		return getElement(driver, locator).getText();
 	}
 
+	public String getTextElement(WebDriver driver, String locator, String... values) {
+		return getElement(driver, getDynamicLocator(locator, values)).getText();
+	}
+	
 	public int getElementSize(WebDriver driver, String locator) {
 		return getElements(driver, locator).size();
 	}
@@ -244,11 +269,10 @@ public class BasePage {
 	public boolean isElementSelected(WebDriver driver, String locator) {
 		return getElement(driver, locator).isSelected();
 	}
-	
+
 	public boolean isElementSelected(WebDriver driver, String locator, String... values) {
 		return getElement(driver, getDynamicLocator(locator, values)).isSelected();
 	}
-	
 
 	public boolean isElementDisplay(WebDriver driver, String locator) {
 		return getElement(driver, locator).isDisplayed();
@@ -257,7 +281,7 @@ public class BasePage {
 	public boolean isElementEnable(WebDriver driver, String locator) {
 		return getElement(driver, locator).isEnabled();
 	}
-	
+
 	public boolean isElementEnable(WebDriver driver, String locator, String... values) {
 		return getElement(driver, getDynamicLocator(locator, values)).isEnabled();
 	}
@@ -300,6 +324,11 @@ public class BasePage {
 	public void sendKeyboardToElement(WebDriver driver, String locator, Keys key) {
 		action = new Actions(driver);
 		action.sendKeys(getElement(driver, locator), key).perform();
+	}
+	
+	public void sendKeyboardToElement(WebDriver driver, String locator, Keys key, String... values) {
+		action = new Actions(driver);
+		action.sendKeys(getElement(driver, getDynamicLocator(locator, values)), key).perform();
 	}
 
 	public void dragAndDrop(WebDriver driver, String sourceLocator, String targetLocator) {
@@ -712,16 +741,6 @@ public class BasePage {
 
 	// DYNAMIC LOCATOR
 
-	public void inputToTextboxByName(WebDriver driver, String textboxName, String inputValue) {
-		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
-		sendkeyToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, inputValue, textboxName);
-	}
-
-	public void clickToButtonByValue(WebDriver driver, String buttonValue) {
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_VAULE, buttonValue);
-		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_VAULE, buttonValue);
-	}
-
 	public BasePage clickToMenuNavByName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_MENU_NAV_BY_TEXT, pageName);
 		clickToElement(driver, BasePageUI.DYNAMIC_MENU_NAV_BY_TEXT, pageName);
@@ -740,12 +759,39 @@ public class BasePage {
 			throw new RuntimeException("Please input the correct Page Name");
 		}
 	}
+
+	public void inputToTextboxByName(WebDriver driver, String textboxName, String inputValue) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
+		getElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
+		sendkeyToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, inputValue, textboxName);
+	}
 	
+	public void clickToTextboxByName(WebDriver driver, String textboxName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
+		clickToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
+	}
+	
+	public void sendTabKeyToTextboxByName(WebDriver driver, String textboxName) {
+		getElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName).clear();;
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
+		sendKeyboardToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, Keys.TAB , textboxName);
+	}
+
+	public void clickToButtonByValue(WebDriver driver, String buttonValue) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_VAULE, buttonValue);
+		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_VAULE, buttonValue);
+	}
+
 	public void clickToRadioButtonByValue(WebDriver driver, String raidoValue) {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_VALUE, raidoValue);
-		if(!isElementSelected(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_VALUE, raidoValue)) {
+		if (!isElementSelected(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_VALUE, raidoValue)) {
 			clickToElement(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_VALUE, raidoValue);
 		}
+	}
+	
+	public String getCustomerErrorMessageByTextboxName(WebDriver driver, String textboxName) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
+		return getTextElement(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
 	}
 
 }
