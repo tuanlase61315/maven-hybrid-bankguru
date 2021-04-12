@@ -59,26 +59,26 @@ public class Customer_02_Edit_Customer extends BaseTest {
 		customerPage.sendTabKeyToTextboxByName(driver, "cusid");
 
 		log.info("Verify CustomerID - Step 04: Verify an error message 'Customer ID is required' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Customer ID is required");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Customer ID is required");
 
 		log.info("Verify CustomerID - Step 05: Enter Customer ID textbox with value '1234Acc'");
 		customerPage.inputToTextboxByName(driver, "cusid", "1234Acc");
 
 		log.info("Verify CustomerID - Step 06: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 		log.info("Verify CustomerID - Step 07: Enter Customer ID textbox with value 'Acc123'");
 		customerPage.inputToTextboxByName(driver, "cusid", "Acc123");
 
 		log.info("Verify CustomerID - Step 08: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 		log.info("Verify CustomerID - Step 09: Enter Customer ID textbox with value '123!@#'");
 		customerPage.inputToTextboxByName(driver, "cusid", "123!@#");
 
 		log.info(
 				"Verify CustomerID - Step 10: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"),
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"Special characters are not allowed");
 
 		log.info("Verify CustomerID - Step 11: Enter Customer ID textbox with value '!@#'");
@@ -86,14 +86,14 @@ public class Customer_02_Edit_Customer extends BaseTest {
 
 		log.info(
 				"Verify CustomerID - Step 12: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"),
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"Special characters are not allowed");
 
 		log.info("Verify CustomerID - Step 13: Enter Customer ID textbox with value 'xyz'");
 		customerPage.inputToTextboxByName(driver, "cusid", "xyz");
 
 		log.info("Verify CustomerID - Step 14: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 	}
 
@@ -125,31 +125,31 @@ public class Customer_02_Edit_Customer extends BaseTest {
 		customerPage.sendTabKeyToTextboxByName(driver, "city");
 
 		log.info("Verify City - Step 03: Verify an error message 'City Field must not be blank' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "city"), "City Field must not be blank");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"), "City Field must not be blank");
 		
 		log.info("Verify City - Step 05: Enter City textbox with value '1234'");
 		customerPage.inputToTextboxByName(driver, "city", "1234");
 
 		log.info("Verify City - Step 06: Verify an error message 'Numbers are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "city"), "Numbers are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"), "Numbers are not allowed");
 		
 		log.info("Verify City - Step 07: Enter City textbox with value 'city1234'");
 		customerPage.inputToTextboxByName(driver, "city", "city1234");
 
 		log.info("Verify City - Step 08: Verify an error message 'Numbers are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "city"), "Numbers are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"), "Numbers are not allowed");
 		
 		log.info("Verify City - Step 09: Enter City textbox with value 'city!@#'");
 		customerPage.inputToTextboxByName(driver, "city", "city!@#");
 
 		log.info("Verify City - Step 10: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "city"), "Special characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"), "Special characters are not allowed");
 		
 		log.info("Verify City - Step 11: Enter City textbox with value '!@#'");
 		customerPage.inputToTextboxByName(driver, "city", "!@#");
 
 		log.info("Verify City - Step 12: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "city"), "Special characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"), "Special characters are not allowed");
 	}
 	
 	@Test
@@ -161,31 +161,31 @@ public class Customer_02_Edit_Customer extends BaseTest {
 		customerPage.sendTabKeyToTextboxByName(driver, "state");
 
 		log.info("Verify State - Step 03: Verify an error message 'State must not be blank' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "state"), "State must not be blank");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"), "State must not be blank");
 		
 		log.info("Verify State - Step 05: Enter State textbox with value '1234'");
 		customerPage.inputToTextboxByName(driver, "state", "1234");
 
 		log.info("Verify State - Step 06: Verify an error message 'Numbers are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "state"), "Numbers are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"), "Numbers are not allowed");
 		
 		log.info("Verify State - Step 07: Enter State textbox with value 'state1234'");
 		customerPage.inputToTextboxByName(driver, "state", "state1234");
 
 		log.info("Verify State - Step 08: Verify an error message 'Numbers are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "state"), "Numbers are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"), "Numbers are not allowed");
 		
 		log.info("Verify State - Step 09: Enter State textbox with value 'state!@#'");
 		customerPage.inputToTextboxByName(driver, "state", "state!@#");
 
 		log.info("Verify State - Step 10: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "state"), "Special characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"), "Special characters are not allowed");
 		
 		log.info("Verify State - Step 11: Enter City State with value '!@#'");
 		customerPage.inputToTextboxByName(driver, "state", "!@#");
 
 		log.info("Verify State - Step 12: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "state"), "Special characters are not allowed");	
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"), "Special characters are not allowed");	
 	}
 	
 	@Test
@@ -197,31 +197,31 @@ public class Customer_02_Edit_Customer extends BaseTest {
 		customerPage.sendTabKeyToTextboxByName(driver, "pinno");
 
 		log.info("Verify PIN - Step 03: Verify an error message 'PIN Code must not be blank' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "pinno"), "PIN Code must not be blank");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "PIN Code must not be blank");
 		
 		log.info("Verify PIN - Step 05: Enter PIN textbox with value '1234'");
 		customerPage.inputToTextboxByName(driver, "pinno", "1234");
 
 		log.info("Verify PIN - Step 06: Verify an error message 'PIN Code must have 6 Digits' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "pinno"), "PIN Code must have 6 Digits");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "PIN Code must have 6 Digits");
 		
 		log.info("Verify PIN - Step 07: Enter PIN textbox with value 'PIN234'");
 		customerPage.inputToTextboxByName(driver, "pinno", "PIN234");
 
 		log.info("Verify PIN - Step 08: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "pinno"), "Characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "Characters are not allowed");
 		
 		log.info("Verify PIN - Step 09: Enter PIN textbox with value 'pin!@#'");
 		customerPage.inputToTextboxByName(driver, "pinno", "pin!@#");
 
 		log.info("Verify PIN - Step 10: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "pinno"), "Special characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "Special characters are not allowed");
 		
 		log.info("Verify PIN - Step 11: Enter PIN State with value '!@#'");
 		customerPage.inputToTextboxByName(driver, "pinno", "!@#");
 
 		log.info("Verify PIN - Step 12: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "pinno"), "Special characters are not allowed");	
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "Special characters are not allowed");	
 	}
 	
 	@Test
@@ -233,25 +233,25 @@ public class Customer_02_Edit_Customer extends BaseTest {
 		customerPage.sendTabKeyToTextboxByName(driver, "telephoneno");
 
 		log.info("Verify Telephone - Step 03: Verify an error message 'Mobile no must not be blank' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "telephoneno"), "Mobile no must not be blank");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"), "Mobile no must not be blank");
 		
 		log.info("Verify Telephone - Step 04: Enter Telephone textbox with value '123123!@12'");
 		customerPage.inputToTextboxByName(driver, "telephoneno", "123123!@12");
 
 		log.info("Verify Telephone - Step 05: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "telephoneno"), "Special characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"), "Special characters are not allowed");
 		
 		log.info("Verify Telephone - Step 06: Enter Telephone State with value '!@#123123213'");
 		customerPage.inputToTextboxByName(driver, "telephoneno", "!@#123123213");
 
 		log.info("Verify Telephone - Step 07: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "telephoneno"), "Special characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"), "Special characters are not allowed");
 		
 		log.info("Verify Telephone - Step 08: Enter Telephone State with value '123123213!@#'");
 		customerPage.inputToTextboxByName(driver, "telephoneno", "123123213!@#");
 
 		log.info("Verify Telephone - Step 09: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "telephoneno"), "Special characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"), "Special characters are not allowed");
 	}
 	
 	@Test
@@ -263,31 +263,31 @@ public class Customer_02_Edit_Customer extends BaseTest {
 		customerPage.sendTabKeyToTextboxByName(driver, "emailid");
 
 		log.info("Verify Email - Step 03: Verify an error message 'Email-ID must not be blank' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "emailid"), "Email-ID must not be blank");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID must not be blank");
 		
 		log.info("Verify Email - Step 04: Enter Email textbox with value 'guru99@gmail'");
 		customerPage.inputToTextboxByName(driver, "emailid", "guru99@gmail");
 
 		log.info("Verify Email - Step 05: Verify an error message 'Email-ID is not valid' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 		
 		log.info("Verify Email - Step 04: Enter Email textbox with value 'guru99'");
 		customerPage.inputToTextboxByName(driver, "emailid", "guru99");
 
 		log.info("Verify Email - Step 05: Verify an error message 'Email-ID is not valid' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 		
 		log.info("Verify Email - Step 06: Enter Email textbox with value 'guru99@'");
 		customerPage.inputToTextboxByName(driver, "emailid", "guru99@");
 
 		log.info("Verify Email - Step 07: Verify an error message 'Email-ID is not valid' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 		
 		log.info("Verify Email - Step 08: Enter Email textbox with value 'guru99gmail.com'");
 		customerPage.inputToTextboxByName(driver, "emailid", "guru99gmail.com");
 
 		log.info("Verify Email - Step 09: Verify an error message 'Email-ID is not valid' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 	}
 
 	@Test

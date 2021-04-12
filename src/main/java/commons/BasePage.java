@@ -799,7 +799,7 @@ public class BasePage {
 		}
 	}
 	
-	public String getCustomerErrorMessageByTextboxName(WebDriver driver, String textboxName) {
+	public String getItemErrorMessageByTextboxName(WebDriver driver, String textboxName) {
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
 		return getTextElement(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
 	}

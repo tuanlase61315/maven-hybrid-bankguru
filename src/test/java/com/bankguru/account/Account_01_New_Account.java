@@ -59,28 +59,28 @@ public class Account_01_New_Account extends BaseTest {
 
 		log.info(
 				"Verify Customer ID In New Account - Step 04: Verify an error message 'Customer ID is required' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Customer ID is required");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Customer ID is required");
 
 		log.info("Verify Customer ID In New Account - Step 05: Enter Customer ID textbox with value '1234Acc'");
 		accountPage.inputToTextboxByName(driver, "cusid", "1234Acc");
 
 		log.info(
 				"Verify Customer ID In New Account - Step 06: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 		log.info("Verify Customer ID In New Account - Step 07: Enter Customer ID textbox with value 'Acc123'");
 		accountPage.inputToTextboxByName(driver, "cusid", "Acc123");
 
 		log.info(
 				"Verify Customer ID In New Account - Step 08: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 		log.info("Verify Customer ID In New Account - Step 09: Enter Customer ID textbox with value '123!@#'");
 		accountPage.inputToTextboxByName(driver, "cusid", "123!@#");
 
 		log.info(
 				"Verify Customer ID In New Account - Step 10: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "cusid"),
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"Special characters are not allowed");
 
 		log.info("Verify Customer ID In New Account - Step 11: Enter Customer ID textbox with value '!@#'");
@@ -88,7 +88,7 @@ public class Account_01_New_Account extends BaseTest {
 
 		log.info(
 				"Verify Customer ID In New Account - Step 12: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "cusid"),
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"Special characters are not allowed");
 
 		log.info("Verify Customer ID In New Account - Step 13: Enter Customer ID textbox with value 'xyz'");
@@ -96,21 +96,21 @@ public class Account_01_New_Account extends BaseTest {
 
 		log.info(
 				"Verify Customer ID In New Account - Step 14: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 		log.info("Verify Customer ID In New Account - Step 14: Enter Customer ID textbox with value '123 123'");
 		accountPage.inputToTextboxByName(driver, "cusid", "123 123");
 
 		log.info(
 				"Verify Customer ID In New Account - Step 15: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 		log.info("Verify Customer ID In New Account - Step 16: Enter Customer ID textbox with value ' '");
 		accountPage.inputToTextboxByName(driver, "cusid", " ");
 
 		log.info(
 				"Verify Customer ID In New Account - Step 17: Verify an error message 'First character can not have space' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "cusid"),
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"First character can not have space");
 	}
 
@@ -124,7 +124,7 @@ public class Account_01_New_Account extends BaseTest {
 
 		log.info(
 				"Verify Intial Deposit In New Account - Step 03: Verify an error message 'Initial Deposit must not be blank' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "inideposit"),
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "inideposit"),
 				"Initial Deposit must not be blank");
 		
 		log.info("Verify Intial Deposit In New Account - Step 04: Enter Intial Deposit textbox with value '123ABC'");
@@ -132,7 +132,7 @@ public class Account_01_New_Account extends BaseTest {
 
 		log.info(
 				"Verify Intial Deposit In New Account - Step 05: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "inideposit"), "Characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "inideposit"), "Characters are not allowed");
 
 		
 		log.info("Verify Intial Deposit In New Account - Step 06: Enter Intial Deposit textbox with value 'ABC123'");
@@ -140,35 +140,35 @@ public class Account_01_New_Account extends BaseTest {
 
 		log.info(
 				"Verify Intial Deposit In New Account - Step 07: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "inideposit"), "Characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "inideposit"), "Characters are not allowed");
 
 		log.info("Verify Intial Deposit In New Account - Step 08: Enter Intial Deposit textbox with value '123!@#");
 		accountPage.inputToTextboxByName(driver, "inideposit", "123!@#");
 
 		log.info(
 				"Verify Intial Deposit In New Account - Step 09: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "inideposit"), "Special characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "inideposit"), "Special characters are not allowed");
 		
 		log.info("Verify Intial Deposit In New Account - Step 10: Enter Intial Deposit textbox with value '!@#123'");
 		accountPage.inputToTextboxByName(driver, "inideposit", "!@#123");
 
 		log.info(
 				"Verify Intial Deposit In New Account - Step 11: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "inideposit"), "Special characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "inideposit"), "Special characters are not allowed");
 		
 		log.info("Verify Intial Deposit In New Account - Step 12: Enter Intial Deposit textbox with value '123 123'");
 		accountPage.inputToTextboxByName(driver, "inideposit", "123 123");
 
 		log.info(
 				"Verify Intial Deposit In New Account - Step 13: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "inideposit"), "Characters are not allowed");
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "inideposit"), "Characters are not allowed");
 		
 		log.info("Verify Intial Deposit In New Account - Step 14: Enter Intial Deposit textbox with value ' '");
 		accountPage.inputToTextboxByName(driver, "inideposit", " ");
 
 		log.info(
 				"Verify Intial Deposit In New Account - Step 15: Verify an error message 'First character can not have space' is displayed");
-		verifyEquals(accountPage.getCustomerErrorMessageByTextboxName(driver, "inideposit"), "First character can not have space");			
+		verifyEquals(accountPage.getItemErrorMessageByTextboxName(driver, "inideposit"), "First character can not have space");			
 	}
 
 	@Test

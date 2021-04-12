@@ -53,26 +53,26 @@ public class Customer_03_Delete_Customer extends BaseTest{
 		customerPage.sendTabKeyToTextboxByName(driver, "cusid");
 
 		log.info("Verify CustomerID - Step 04: Verify an error message 'Customer ID is required' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Customer ID is required");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Customer ID is required");
 
 		log.info("Verify CustomerID - Step 05: Enter Customer ID textbox with value '1234Acc'");
 		customerPage.inputToTextboxByName(driver, "cusid", "1234Acc");
 
 		log.info("Verify CustomerID - Step 06: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 		log.info("Verify CustomerID - Step 07: Enter Customer ID textbox with value 'Acc123'");
 		customerPage.inputToTextboxByName(driver, "cusid", "Acc123");
 
 		log.info("Verify CustomerID - Step 08: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
 		log.info("Verify CustomerID - Step 09: Enter Customer ID textbox with value '123!@#'");
 		customerPage.inputToTextboxByName(driver, "cusid", "123!@#");
 
 		log.info(
 				"Verify CustomerID - Step 10: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"),
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"Special characters are not allowed");
 
 		log.info("Verify CustomerID - Step 11: Enter Customer ID textbox with value '!@#'");
@@ -80,14 +80,14 @@ public class Customer_03_Delete_Customer extends BaseTest{
 
 		log.info(
 				"Verify CustomerID - Step 12: Verify an error message 'Special characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"),
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"Special characters are not allowed");
 
 		log.info("Verify CustomerID - Step 13: Enter Customer ID textbox with value 'xyz'");
 		customerPage.inputToTextboxByName(driver, "cusid", "xyz");
 
 		log.info("Verify CustomerID - Step 14: Verify an error message 'Characters are not allowed' is displayed");
-		verifyEquals(customerPage.getCustomerErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
+		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 	}
 	
 	@Test
