@@ -13,10 +13,6 @@ public class CustomerPageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public String getRegisteredAndEditedSuccessMessage() {
-		waitForElementVisible(driver, CustomerPageUI.CUSTOMER_REGISTERED_AND_EDITED_SUCCESS_MESSAGE);
-		return getTextElement(driver, CustomerPageUI.CUSTOMER_REGISTERED_AND_EDITED_SUCCESS_MESSAGE);
-	}
 
 	public void inputToAddressTextarea(String addressValue) {
 		waitForAllElementVisible(driver, CustomerPageUI.CUSTOMER_ADDRESS_TEXTAREA);
@@ -48,6 +44,11 @@ public class CustomerPageObject extends BasePage {
 	public String getCustomerInfoByText(String itemText) {
 		waitForAllElementVisible(driver, CustomerPageUI.DYNAMIC_CUSTOMER_INFO_BY_TEXT, itemText);
 		return getTextElement(driver, CustomerPageUI.DYNAMIC_CUSTOMER_INFO_BY_TEXT, itemText);
+	}
+
+	public HomePageObject acceptDeleteCustomerAlert() {
+		acceptAlert(driver);
+		return PageGeneratorManager.getHomePageObject(driver);
 	}
 
 	

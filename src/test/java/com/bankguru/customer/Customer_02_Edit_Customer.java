@@ -1,7 +1,5 @@
 package com.bankguru.customer;
 
-import java.sql.Date;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,11 +13,10 @@ import pageObjects.CustomerPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.PageGeneratorManager;
-import utilities.FakerConfig;
 
 public class Customer_02_Edit_Customer extends BaseTest {
 	WebDriver driver;
-	String editCusAddress, editCusCity, editCusState, editCusPIN, editCusMobilePhone, editCusEmail;
+	public static String editCusAddress, editCusCity, editCusState, editCusPIN, editCusMobilePhone, editCusEmail;
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -326,7 +323,7 @@ public class Customer_02_Edit_Customer extends BaseTest {
 		customerPage.clickToButtonByValue(driver, "Submit");
 
 		log.info("Edit Customer - Step 11: Verify Customer Edited Successfully Message");
-		verifyEquals(customerPage.getRegisteredAndEditedSuccessMessage(), "Customer details updated Successfully!!!");
+		verifyEquals(customerPage.getRegisteredAndEditedSuccessMessage(driver), "Customer details updated Successfully!!!");
 
 		log.info("Edit Customer - Step 12: Verify Customer ID with value " + Customer_01_New_Customer.cusID);
 		verifyEquals(customerPage.getCustomerInfoByText("Customer ID"), Customer_01_New_Customer.cusID);

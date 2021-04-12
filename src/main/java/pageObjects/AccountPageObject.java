@@ -3,12 +3,24 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import pageUIs.AccountPageUI;
+import pageUIs.CustomerPageUI;
 
 public class AccountPageObject extends BasePage{
 	private WebDriver driver;
 
 	public AccountPageObject(WebDriver driver) {
 		this.driver = driver;
+	}
+
+	public void selectItemInAccountTypeDropbox(String itemText) {
+		waitForElementClickable(driver, AccountPageUI.ACCOUNT_TYPE_DROPBOX);
+		selectItemInDropdownByText(driver, AccountPageUI.ACCOUNT_TYPE_DROPBOX, itemText);		
+	}
+	
+	public String getAccountInfoByText(String itemText) {
+		waitForAllElementVisible(driver, AccountPageUI.DYNAMIC_ACCOUNT_INFO_BY_TEXT, itemText);
+		return getTextElement(driver, AccountPageUI.DYNAMIC_ACCOUNT_INFO_BY_TEXT, itemText);
 	}
 	
 	

@@ -18,7 +18,8 @@
 			<class name="com.bankguru.common.Common_01_Register" />
 			<class name="com.bankguru.customer.Customer_01_New_Customer" />
 			<class name="com.bankguru.customer.Customer_02_Edit_Customer" />
-			
+			<class name="com.bankguru.customer.Customer_03_Delete_Customer" />
+			<class name="com.bankguru.account.Account_01_New_Account" />
 		</classes>
 	</test>
 </suite> 

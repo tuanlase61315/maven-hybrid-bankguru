@@ -4,6 +4,7 @@ import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -24,6 +25,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.PageGeneratorManager;
 import pageUIs.BasePageUI;
+import pageUIs.CustomerPageUI;
 
 import org.apache.commons.logging.Log;
 
@@ -124,21 +126,25 @@ public class BasePage {
 
 	public void acceptAlert(WebDriver driver) {
 		alert = waitAlertPresence(driver);
+		driver.switchTo().alert();
 		alert.accept();
 	}
 
 	public void cancelAlert(WebDriver driver) {
 		alert = waitAlertPresence(driver);
+		driver.switchTo().alert();
 		alert.dismiss();
 	}
 
 	public String getTextAlert(WebDriver driver) {
 		alert = waitAlertPresence(driver);
+		driver.switchTo().alert();
 		return alert.getText();
 	}
 
 	public void sendkeyToAlert(WebDriver driver, String value) {
 		alert = waitAlertPresence(driver);
+		driver.switchTo().alert();
 		alert.sendKeys(value);
 	}
 
@@ -214,8 +220,8 @@ public class BasePage {
 		getElement(driver, getDynamicLocator(locator, values)).sendKeys(value);
 	}
 
-	public void selectItemInDropdownByText(WebDriver dirver, String locator, String itemText) {
-		select = new Select(getElement(dirver, locator));
+	public void selectItemInDropdownByText(WebDriver driver, String locator, String itemText) {
+		select = new Select(getElement(driver, locator));
 		select.selectByVisibleText(itemText);
 	}
 
@@ -738,6 +744,10 @@ public class BasePage {
 		}
 		return date;
 	}
+	
+	public static long getRandomNumberByDateTime() {
+		return Calendar.getInstance().getTimeInMillis() % 100000;
+	}
 
 	// DYNAMIC LOCATOR
 
@@ -792,6 +802,11 @@ public class BasePage {
 	public String getCustomerErrorMessageByTextboxName(WebDriver driver, String textboxName) {
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
 		return getTextElement(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
+	}
+	
+	public String getRegisteredAndEditedSuccessMessage(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.REGISTERED_AND_EDITED_SUCCESS_MESSAGE);
+		return getTextElement(driver, BasePageUI.REGISTERED_AND_EDITED_SUCCESS_MESSAGE);
 	}
 
 }

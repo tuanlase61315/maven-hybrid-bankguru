@@ -514,7 +514,7 @@ public class Customer_01_New_Customer extends BaseTest {
 		customerPage.clickToButtonByValue(driver, "Submit");
 
 		log.info("New Customer - Step 13: Verify Customer Registered Successfully Message");
-		verifyEquals(customerPage.getRegisteredAndEditedSuccessMessage(), "Customer Registered Successfully!!!");
+		verifyEquals(customerPage.getRegisteredAndEditedSuccessMessage(driver), "Customer Registered Successfully!!!");
 		
 		log.info("New Customer - Step 14: Verify Customer Name with value " + cusName);
 		verifyEquals(customerPage.getCustomerInfoByText("Customer Name"), cusName);
