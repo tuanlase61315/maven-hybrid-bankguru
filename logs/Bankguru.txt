@@ -1,0 +1,501 @@
+[INFO ] [2021-04-14 02:36:53,531] Register - Step 01: Open Login Page
+[INFO ] [2021-04-14 02:36:53,542] Register - Step 02: Click here link
+[INFO ] [2021-04-14 02:36:56,374] Register - Step 03: Enter Email Textbox
+[INFO ] [2021-04-14 02:36:56,539] Register - Step 04: Click Submit button
+[INFO ] [2021-04-14 02:37:02,286] Precondition - Step 01: Open Login Page
+[INFO ] [2021-04-14 02:37:02,286] Precondition - Step 02: Enter UserID in Textbox with value: mngr320060
+[INFO ] [2021-04-14 02:37:02,450] Precondition - Step 03: Enter Password in Textbox with value: ErusEbu
+[INFO ] [2021-04-14 02:37:02,594] Precondition - Step 04: Click Login button
+[INFO ] [2021-04-14 02:37:04,385] Precondition - Step 05: Verify homepage message after login successfull
+[INFO ] [2021-04-14 02:37:04,416]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:04,457] Verify Name - Step 01: Open New Customer Page
+[INFO ] [2021-04-14 02:37:04,855] Verify Name - Step 02: Click Customer Name textbox
+[INFO ] [2021-04-14 02:37:04,936] Verify Name - Step 03: Press Tab key
+[INFO ] [2021-04-14 02:37:05,139] Verify Name - Step 04: Verify an error message 'Customer name must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:05,199]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:05,200] Verify Name - Step 05: Enter Customer Name in Textbox with value: 1234
+[INFO ] [2021-04-14 02:37:05,337] Verify Name - Step 06: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:05,381]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:05,381] Verify Name - Step 07: Enter Customer Name in Textbox with value: 123abc
+[INFO ] [2021-04-14 02:37:05,518] Verify Name - Step 08: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:05,569]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:05,569] Verify Name - Step 09: Enter Customer Name in Textbox with value: name!@#!@#abc
+[INFO ] [2021-04-14 02:37:05,707] Verify Name - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:05,754]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:05,754] Verify Name - Step 11: Enter Customer Name in Textbox with value: !@#!@#
+[INFO ] [2021-04-14 02:37:05,886] Verify Name - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:05,941]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:05,941] Verify Name - Step 13: Enter Customer Name in Textbox with 'First charater blank space'  
+[INFO ] [2021-04-14 02:37:06,074] Verify Name - Step 14: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:06,125]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:06,197] Verify Address - Step 01: Click Customer Address Textarea
+[INFO ] [2021-04-14 02:37:06,317] Verify Address - Step 02: Press Tab key
+[INFO ] [2021-04-14 02:37:06,499] Verify Address - Step 03: Verify an error message 'Address Field must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:06,553]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:06,553] Verify Address - Step 04: Enter Customer Adress in Textarea with 'First charater blank space' 
+[INFO ] [2021-04-14 02:37:06,691] Verify Address - Step 05: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:06,739]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:06,743] Verify City - Step 01: Click Customer City textbox
+[INFO ] [2021-04-14 02:37:06,851] Verify City - Step 02: Press Tab key
+[INFO ] [2021-04-14 02:37:07,063] Verify City - Step 03: Verify an error message 'City Field must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:07,114]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:07,114] Verify City - Step 04: Enter Customer City in Textbox with value: 1234
+[INFO ] [2021-04-14 02:37:07,234] Verify City - Step 05: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:07,283]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:07,283] Verify City - Step 06: Enter Customer City in Textbox with value: 123abc
+[INFO ] [2021-04-14 02:37:07,406] Verify City - Step 07: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:07,456]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:07,456] Verify City - Step 08: Enter Customer City in Textbox with value: !@#abc
+[INFO ] [2021-04-14 02:37:07,594] Verify City - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:07,639]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:07,639] Verify City - Step 10: Enter Customer City in Textbox with value: !@#
+[INFO ] [2021-04-14 02:37:07,757] Verify City - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:07,808]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:07,808] Verify City - Step 12: Enter Customer City in Textbox with 'First charater blank space' 
+[INFO ] [2021-04-14 02:37:07,928] Verify City - Step 13: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:07,983]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:07,986] Verify State - Step 01: Click Customer State textbox
+[INFO ] [2021-04-14 02:37:08,060] Verify State - Step 02: Press Tab key
+[INFO ] [2021-04-14 02:37:08,277] Verify State - Step 03: Verify an error message 'State must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:08,330]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:08,330] Verify State - Step 04: Enter Customer State in Textbox with value: 1234
+[INFO ] [2021-04-14 02:37:08,452] Verify State - Step 05: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:08,501]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:08,501] Verify State - Step 06: Enter Customer State in Textbox with value: 123abc
+[INFO ] [2021-04-14 02:37:08,619] Verify State - Step 07: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:08,671]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:08,671] Verify State - Step 08: Enter Customer State in Textbox with value: !@#abc
+[INFO ] [2021-04-14 02:37:08,788] Verify State - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:08,840]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:08,841] Verify State - Step 10: Enter Customer State in Textbox with value: !@#
+[INFO ] [2021-04-14 02:37:08,976] Verify State - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:09,024]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:09,024] Verify State - Step 12: Enter Customer State in Textbox with 'First charater blank space'  
+[INFO ] [2021-04-14 02:37:09,160] Verify State - Step 13: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:09,209]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:09,213] Verify PIN - Step 01: Click Customer PIN textbox
+[INFO ] [2021-04-14 02:37:09,289] Verify PIN - Step 02: Press Tab key
+[INFO ] [2021-04-14 02:37:09,505] Verify PIN - Step 03: Verify an error message 'PIN Code must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:09,552]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:09,552] Verify PIN - Step 04: Enter Customer PIN in Textbox with value: 123
+[INFO ] [2021-04-14 02:37:09,674] Verify PIN - Step 05: Verify an error message 'PIN Code must have 6 Digits' is displayed
+[INFO ] [2021-04-14 02:37:09,719]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:09,719] Verify PIN - Step 06: Enter Customer PIN in Textbox with value: 123abc
+[INFO ] [2021-04-14 02:37:09,859] Verify PIN - Step 07: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:09,906]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:09,906] Verify PIN - Step 08: Enter Customer PIN in Textbox with value: !@#abc
+[INFO ] [2021-04-14 02:37:10,029] Verify PIN - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:10,082]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:10,082] Verify PIN - Step 10: Enter Customer PIN in Textbox with value: !@#
+[INFO ] [2021-04-14 02:37:10,217] Verify PIN - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:10,267]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:10,267] Verify PIN - Step 12: Enter Customer PIN in Textbox with 'First charater blank space'  
+[INFO ] [2021-04-14 02:37:10,404] Verify PIN - Step 13: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:10,452]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:10,452] Verify PIN - Step 14: Enter Customer PIN in Textbox with value: 123
+[INFO ] [2021-04-14 02:37:10,586] Verify PIN - Step 15: Verify an error message 'PIN Code must have 6 Digits' is displayed
+[INFO ] [2021-04-14 02:37:10,636]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:10,636] Verify PIN - Step 16: Enter Customer PIN in Textbox with value: 123 12
+[INFO ] [2021-04-14 02:37:10,774] Verify PIN - Step 17: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:10,822]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:10,825] Verify Telephone - Step 01: Click Customer Telephone textbox
+[INFO ] [2021-04-14 02:37:10,899] Verify Telephone - Step 02: Press Tab key
+[INFO ] [2021-04-14 02:37:11,102] Verify Telephone - Step 03: Verify an error message 'Mobile no must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:11,151]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:11,151] Verify Telephone - Step 04: Enter Customer Telephone in Textbox with 'First charater blank space'  
+[INFO ] [2021-04-14 02:37:11,291] Verify Telephone - Step 05: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:11,337]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:11,337] Verify Telephone - Step 06: Enter Customer Telephone in Textbox with value: 123 12
+[INFO ] [2021-04-14 02:37:11,471] Verify Telephone - Step 07: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:11,522]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:11,522] Verify Telephone - Step 08: Enter Customer State in Textbox with value: 123!@#
+[INFO ] [2021-04-14 02:37:11,660] Verify Telephone - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:11,708]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:11,708] Verify Telephone - Step 10: Enter Customer State in Textbox with value: !@#123
+[INFO ] [2021-04-14 02:37:11,849] Verify Telephone - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:11,896]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:11,896] Verify Telephone - Step 12: Enter Customer State in Textbox with value: !@#
+[INFO ] [2021-04-14 02:37:12,011] Verify Telephone - Step 13: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:12,067]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:12,078] Verify Email - Step 01: Click Customer Email textbox
+[INFO ] [2021-04-14 02:37:12,159] Verify Email - Step 02: Press Tab key
+[INFO ] [2021-04-14 02:37:12,391] Verify Email - Step 03: Verify an error message 'Email-ID must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:12,439]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:12,439] Verify Email - Step 04: Enter Customer Email in Textbox with value: guru99@gmail.
+[INFO ] [2021-04-14 02:37:12,587] Verify Email - Step 05: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:12,638]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:12,638] Verify Email - Step 06: Enter Customer Email in Textbox with value: guru99
+[INFO ] [2021-04-14 02:37:12,776] Verify Email - Step 07: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:12,824]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:12,824] Verify Email - Step 08: Enter Customer Email in Textbox with value: guru99@
+[INFO ] [2021-04-14 02:37:12,964] Verify Email - Step 09: Verify an error message 'Email-ID is not valid' is displayed
+[INFO ] [2021-04-14 02:37:13,012]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:13,012] Verify Email - Step 10: Enter Customer Email in Textbox with value: guru99@gmail.
+[INFO ] [2021-04-14 02:37:13,152] Verify Email - Step 11: Verify an error message 'Email-ID is not valid' is displayed
+[INFO ] [2021-04-14 02:37:13,200]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:13,200] Verify Email - Step 12: Enter Customer Email in Textbox with value: 'test222gmail.com'guru99gmail.com
+[INFO ] [2021-04-14 02:37:13,321] Verify Email - Step 13: Verify an error message 'Email-ID is not valid' is displayed
+[INFO ] [2021-04-14 02:37:13,368]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:13,368] Verify Email - Step 14: Enter Customer Email in Textbox with 'First charater blank space'  
+[INFO ] [2021-04-14 02:37:13,500] Verify Email - Step 15: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:13,557]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:13,560] Verify All - Step 01: Click Resert button
+[INFO ] [2021-04-14 02:37:13,650] Verify All - Step 02: Click Customer Name textbox
+[INFO ] [2021-04-14 02:37:13,726] Verify All - Step 03: Press Tab key
+[INFO ] [2021-04-14 02:37:13,956] Verify All - Step 04: Verify an error message 'Customer name must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:14,007]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:14,007] Verify All - Step 05: Click Customer Date of Birth textbox
+[INFO ] [2021-04-14 02:37:14,095] Verify All - Step 06: Press Tab key
+[INFO ] [2021-04-14 02:37:14,313] Verify All - Step 07: Verify an error message 'Date Field must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:14,362]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:14,362] Verify All - Step 08: Click Customer Address Textarea
+[INFO ] [2021-04-14 02:37:14,472] Verify All - Step 09: Press Tab key
+[INFO ] [2021-04-14 02:37:14,650] Verify All - Step 10: Verify an error message 'Address Field must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:14,702]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:14,702] Verify All - Step 11: Click Customer City textbox
+[INFO ] [2021-04-14 02:37:14,775] Verify All - Step 12: Press Tab key
+[INFO ] [2021-04-14 02:37:14,980] Verify All - Step 13: Verify an error message 'Customer City must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:15,025]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:15,025] Verify All - Step 14: Click Customer State textbox
+[INFO ] [2021-04-14 02:37:15,099] Verify All - Step 15: Press Tab key
+[INFO ] [2021-04-14 02:37:15,331] Verify All - Step 16: Verify an error message 'State must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:15,377]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:15,377] Verify All - Step 17: Click Customer PIN textbox
+[INFO ] [2021-04-14 02:37:15,448] Verify All - Step 18: Press Tab key
+[INFO ] [2021-04-14 02:37:15,655] Verify All - Step 19: Verify an error message 'PIN Code must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:15,702]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:15,702] Verify All - Step 20: Click Customer Phone textbox
+[INFO ] [2021-04-14 02:37:15,774] Verify All - Step 21: Press Tab key
+[INFO ] [2021-04-14 02:37:15,981] Verify All - Step 22: Verify an error message 'Mobile no must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:16,025]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:16,025] Verify All - Step 23: Click Customer Email textbox
+[INFO ] [2021-04-14 02:37:16,094] Verify All - Step 24: Press Tab key
+[INFO ] [2021-04-14 02:37:16,306] Verify All - Step 25: Verify an error message 'Email-ID must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:16,352]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:16,352] Verify All - Step 26: Click Customer Password textbox
+[INFO ] [2021-04-14 02:37:16,427] Verify All - Step 27: Press Tab key
+[INFO ] [2021-04-14 02:37:16,659] Verify All - Step 28: Verify an error message 'Password must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:16,706]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:16,706] Verify All - Step 29: Click Submit button
+[INFO ] [2021-04-14 02:37:16,783] Verify All - Step 30: Verify Alert text 'please fill all fields' is displayed
+[INFO ] [2021-04-14 02:37:16,788]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:16,788] Verify All - Step 31: Click OK button in Alert
+[INFO ] [2021-04-14 02:37:16,808] New Customer - Step 01: Open New Customer Page
+[INFO ] [2021-04-14 02:37:16,918] New Customer - Step 02: Enter Customer Name in Textbox with value: tuan
+[INFO ] [2021-04-14 02:37:17,065] New Customer - Step 03: Select Female Gender
+[INFO ] [2021-04-14 02:37:17,188] New Customer - Step 04: Enter Data of Birth with value: 10/01/1993
+[INFO ] [2021-04-14 02:37:17,328] New Customer - Step 05:  Enter Customer Address in Textbox with value: 172 tay ninh
+[INFO ] [2021-04-14 02:37:17,468] New Customer - Step 06:  Enter Customer City in Textbox with value: tay ninh
+[INFO ] [2021-04-14 02:37:17,623] New Customer - Step 07:  Enter Customer State in Textbox with value: abc
+[INFO ] [2021-04-14 02:37:17,774] New Customer - Step 08:  Enter Customer PIN in Textbox with value: 123456
+[INFO ] [2021-04-14 02:37:17,917] New Customer - Step 09: Enter Customer Mobile Phone in Textbox with value: 0399992426
+[INFO ] [2021-04-14 02:37:18,068] New Customer - Step 10: Enter Customer Email in Textbox with value: test82431@gmail.com
+[INFO ] [2021-04-14 02:37:18,219] New Customer - Step 11: Enter Customer Password in Textbox with value: 123123
+[INFO ] [2021-04-14 02:37:18,366] New Customer - Step 12: Click button Submit
+[INFO ] [2021-04-14 02:37:20,098] New Customer - Step 13: Verify Customer Registered Successfully Message
+[INFO ] [2021-04-14 02:37:20,158]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,158] New Customer - Step 14: Verify Customer Name with value tuan
+[INFO ] [2021-04-14 02:37:20,209]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,209] New Customer - Step 15: Verify Customer Gender with value Female
+[INFO ] [2021-04-14 02:37:20,268]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,268] New Customer - Step 16: Verify Customer Birthdate with value 1993-10-01
+[INFO ] [2021-04-14 02:37:20,315]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,315] New Customer - Step 17: Verify Customer Address with value 172 tay ninh
+[INFO ] [2021-04-14 02:37:20,361]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,361] New Customer - Step 18: Verify Customer State with value abc
+[INFO ] [2021-04-14 02:37:20,409]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,409] New Customer - Step 19: Verify Customer Pin with value 123456
+[INFO ] [2021-04-14 02:37:20,472]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,472] New Customer - Step 20: Verify Customer Mobile No with value 0399992426
+[INFO ] [2021-04-14 02:37:20,534]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,534] New Customer - Step 21: Verify Customer Email with value test82431@gmail.com
+[INFO ] [2021-04-14 02:37:20,597]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:20,667] OS name = windows 10
+[INFO ] [2021-04-14 02:37:21,374] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-04-14 02:37:25,658] Precondition - Step 01: Open Login Page
+[INFO ] [2021-04-14 02:37:25,658] Precondition - Step 02: Enter UserID in Textbox with value: mngr320060
+[INFO ] [2021-04-14 02:37:25,819] Precondition - Step 03: Enter Password in Textbox with value: ErusEbu
+[INFO ] [2021-04-14 02:37:25,961] Precondition - Step 04: Click Login button
+[INFO ] [2021-04-14 02:37:26,929] Precondition - Step 05: Verify homepage message after login successfull
+[INFO ] [2021-04-14 02:37:26,961]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:26,965] Verify CustomerID - Step 01: Click to Edit Customer in Navigate Menu bar
+[INFO ] [2021-04-14 02:37:27,620] Verify CustomerID - Step 02: Click to Customer ID textbox
+[INFO ] [2021-04-14 02:37:27,699] Verify CustomerID - Step 03: Press Tab key in Customer ID textbox
+[INFO ] [2021-04-14 02:37:27,900] Verify CustomerID - Step 04: Verify an error message 'Customer ID is required' is displayed
+[INFO ] [2021-04-14 02:37:27,946]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:27,946] Verify CustomerID - Step 05: Enter Customer ID textbox with value 123abc
+[INFO ] [2021-04-14 02:37:28,085] Verify CustomerID - Step 06: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:28,128]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:28,128] Verify CustomerID - Step 07: Enter Customer ID textbox with value abc123
+[INFO ] [2021-04-14 02:37:28,267] Verify CustomerID - Step 08: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:28,320]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:28,320] Verify CustomerID - Step 09: Enter Customer ID textbox with value !@#123
+[INFO ] [2021-04-14 02:37:28,437] Verify CustomerID - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:28,488]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:28,488] Verify CustomerID - Step 11: Enter Customer ID textbox with value !@#
+[INFO ] [2021-04-14 02:37:28,626] Verify CustomerID - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:28,675]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:28,675] Verify CustomerID - Step 13: Enter Customer ID textbox with value abc
+[INFO ] [2021-04-14 02:37:28,811] Verify CustomerID - Step 14: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:28,859]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:28,862] Verify Address - Step 01: Enter Customer ID with value: 94282
+[INFO ] [2021-04-14 02:37:28,997] Verify Address - Step 02: Click to Submit in Edit Customer Form
+[INFO ] [2021-04-14 02:37:29,673] Verify Address - Step 03: Click to Address Textarea
+[INFO ] [2021-04-14 02:37:29,810] Verify Address - Step 04: Press Tab key in Address Textarea
+[INFO ] [2021-04-14 02:37:29,993] Verify Address - Step 05: Verify an error message 'Address Field must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:30,040]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:30,043] Verify City - Step 01: Click to City textbox
+[INFO ] [2021-04-14 02:37:30,115] Verify City - Step 02: Press Tab key in City textbox
+[INFO ] [2021-04-14 02:37:30,332] Verify City - Step 03: Verify an error message 'City Field must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:30,385]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:30,385] Verify City - Step 05: Enter City textbox with value 1234
+[INFO ] [2021-04-14 02:37:30,506] Verify City - Step 06: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:30,552]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:30,552] Verify City - Step 07: Enter City textbox with value 123abc
+[INFO ] [2021-04-14 02:37:30,672] Verify City - Step 08: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:30,721]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:30,721] Verify City - Step 09: Enter City textbox with value !@#abc
+[INFO ] [2021-04-14 02:37:30,847] Verify City - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:30,898]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:30,898] Verify City - Step 11: Enter City textbox with value !@#
+[INFO ] [2021-04-14 02:37:31,033] Verify City - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:31,087]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:31,089] Verify State - Step 01: Click to State textbox
+[INFO ] [2021-04-14 02:37:31,167] Verify State - Step 02: Press Tab key in State textbox
+[INFO ] [2021-04-14 02:37:31,381] Verify State - Step 03: Verify an error message 'State must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:31,431]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:31,431] Verify State - Step 05: Enter State textbox with value 1234
+[INFO ] [2021-04-14 02:37:31,553] Verify State - Step 06: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:31,601]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:31,601] Verify State - Step 07: Enter State textbox with value 123abc
+[INFO ] [2021-04-14 02:37:31,722] Verify State - Step 08: Verify an error message 'Numbers are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:31,772]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:31,772] Verify State - Step 09: Enter State textbox with value !@#abc
+[INFO ] [2021-04-14 02:37:31,900] Verify State - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:31,949]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:31,949] Verify State - Step 11: Enter City State with value !@#
+[INFO ] [2021-04-14 02:37:32,068] Verify State - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:32,119]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:32,122] Verify PIN - Step 01: Click to PIN textbox
+[INFO ] [2021-04-14 02:37:32,195] Verify PIN - Step 02: Press Tab key in PIN textbox
+[INFO ] [2021-04-14 02:37:32,415] Verify PIN - Step 03: Verify an error message 'PIN Code must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:32,464]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:32,464] Verify PIN - Step 05: Enter PIN textbox with value '1234'123
+[INFO ] [2021-04-14 02:37:32,599] Verify PIN - Step 06: Verify an error message 'PIN Code must have 6 Digits' is displayed
+[INFO ] [2021-04-14 02:37:32,645]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:32,645] Verify PIN - Step 07: Enter PIN textbox with value 123abc
+[INFO ] [2021-04-14 02:37:32,786] Verify PIN - Step 08: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:32,830]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:32,830] Verify PIN - Step 09: Enter PIN textbox with value !@#abc
+[INFO ] [2021-04-14 02:37:32,969] Verify PIN - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:33,016]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:33,016] Verify PIN - Step 11: Enter PIN State with value !@#
+[INFO ] [2021-04-14 02:37:33,152] Verify PIN - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:33,206]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:33,209] Verify Telephone - Step 01: Click to Telephone textbox
+[INFO ] [2021-04-14 02:37:33,282] Verify Telephone - Step 02: Press Tab key in Telephone textbox
+[INFO ] [2021-04-14 02:37:33,498] Verify Telephone - Step 03: Verify an error message 'Mobile no must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:33,544]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:33,544] Verify Telephone - Step 04: Enter Telephone textbox with value 123!@#
+[INFO ] [2021-04-14 02:37:33,683] Verify Telephone - Step 05: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:33,727]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:33,727] Verify Telephone - Step 06: Enter Telephone State with value !@#123
+[INFO ] [2021-04-14 02:37:33,846] Verify Telephone - Step 07: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:33,896]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:33,898] Verify Email - Step 01: Click to Email textbox
+[INFO ] [2021-04-14 02:37:33,974] Verify Email - Step 02: Press Tab key in Email textbox
+[INFO ] [2021-04-14 02:37:34,190] Verify Email - Step 03: Verify an error message 'Email-ID must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:34,237]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:34,237] Verify Email - Step 04: Enter Email textbox with value guru99@gmail
+[INFO ] [2021-04-14 02:37:34,362] Verify Email - Step 05: Verify an error message 'Email-ID is not valid' is displayed
+[INFO ] [2021-04-14 02:37:34,405]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:34,405] Verify Email - Step 04: Enter Email textbox with value guru99
+[INFO ] [2021-04-14 02:37:34,546] Verify Email - Step 05: Verify an error message 'Email-ID is not valid' is displayed
+[INFO ] [2021-04-14 02:37:34,591]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:34,591] Verify Email - Step 06: Enter Email textbox with value guru99@
+[INFO ] [2021-04-14 02:37:34,732] Verify Email - Step 07: Verify an error message 'Email-ID is not valid' is displayed
+[INFO ] [2021-04-14 02:37:34,780]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:34,780] Verify Email - Step 08: Enter Email textbox with value guru99gmail.com
+[INFO ] [2021-04-14 02:37:34,919] Verify Email - Step 09: Verify an error message 'Email-ID is not valid' is displayed
+[INFO ] [2021-04-14 02:37:34,965]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:34,971] Edit Customer - Step 04: Enter Edit Customer Address with value cmt
+[INFO ] [2021-04-14 02:37:35,105] Edit Customer - Step 05: Enter Edit Customer City with value hanoi
+[INFO ] [2021-04-14 02:37:35,242] Edit Customer - Step 06: Enter Edit Customer State with value alo
+[INFO ] [2021-04-14 02:37:35,380] Edit Customer - Step 07: Enter Edit Customer PIN with value 222333
+[INFO ] [2021-04-14 02:37:35,522] Edit Customer - Step 08: Enter Edit Customer PIN with value 333222444
+[INFO ] [2021-04-14 02:37:35,661] Edit Customer - Step 09: Enter Edit Customer PIN with value test6522@gmail.com
+[INFO ] [2021-04-14 02:37:35,807] Edit Customer - Step 10: Click to Submit in Edit Customer
+[INFO ] [2021-04-14 02:37:36,976] Edit Customer - Step 11: Verify Customer Edited Successfully Message
+[INFO ] [2021-04-14 02:37:37,021]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,021] Edit Customer - Step 12: Verify Customer ID with value 94282
+[INFO ] [2021-04-14 02:37:37,069]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,069] Edit Customer - Step 13: Verify Customer Name with value tuan
+[INFO ] [2021-04-14 02:37:37,131]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,131] Edit Customer - Step 14: Verify Customer Gender with value Female
+[INFO ] [2021-04-14 02:37:37,179]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,179] Edit Customer - Step 15: Verify Customer Birthdate with value 1993-10-01
+[INFO ] [2021-04-14 02:37:37,227]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,227] Edit Customer - Step 16: Verify Customer Address with value cmt
+[INFO ] [2021-04-14 02:37:37,288]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,288] Edit Customer - Step 17: Verify Customer State with value alo
+[INFO ] [2021-04-14 02:37:37,351]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,351] Edit Customer - Step 18: Verify Customer Pin with value 222333
+[INFO ] [2021-04-14 02:37:37,412]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,412] Edit Customer - Step 19: Verify Customer Mobile No with value 333222444
+[INFO ] [2021-04-14 02:37:37,476]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,476] Edit Customer - Step 20: Verify Customer Email with value test6522@gmail.com
+[INFO ] [2021-04-14 02:37:37,534]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:37,536] OS name = windows 10
+[INFO ] [2021-04-14 02:37:38,240] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-04-14 02:37:42,142] Precondition - Step 01: Open Login Page
+[INFO ] [2021-04-14 02:37:42,142] Precondition - Step 02: Enter UserID in Textbox with value: mngr320060
+[INFO ] [2021-04-14 02:37:42,300] Precondition - Step 03: Enter Password in Textbox with value: ErusEbu
+[INFO ] [2021-04-14 02:37:42,441] Precondition - Step 04: Click Login button
+[INFO ] [2021-04-14 02:37:43,631] Precondition - Step 05: Verify homepage message after login successfull
+[INFO ] [2021-04-14 02:37:43,668]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:43,670] Verify Customer ID In New Account - Step 01: Click New Account in Navigation Menu Bar
+[INFO ] [2021-04-14 02:37:44,055] Verify Customer ID In New Account - Step 02: Click to Customer ID textbox
+[INFO ] [2021-04-14 02:37:44,139] Verify Customer ID In New Account - Step 03: Press Tab key in Customer ID textbox
+[INFO ] [2021-04-14 02:37:44,358] Verify Customer ID In New Account - Step 04: Verify an error message 'Customer ID is required' is displayed
+[INFO ] [2021-04-14 02:37:44,403]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:44,403] Verify Customer ID In New Account - Step 05: Enter Customer ID textbox with value 123abc
+[INFO ] [2021-04-14 02:37:44,527] Verify Customer ID In New Account - Step 06: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:44,571]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:44,571] Verify Customer ID In New Account - Step 07: Enter Customer ID textbox with value abc123
+[INFO ] [2021-04-14 02:37:44,709] Verify Customer ID In New Account - Step 08: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:44,758]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:44,758] Verify Customer ID In New Account - Step 09: Enter Customer ID textbox with value 123!@#
+[INFO ] [2021-04-14 02:37:44,897] Verify Customer ID In New Account - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:44,942]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:44,942] Verify Customer ID In New Account - Step 11: Enter Customer ID textbox with value !@#
+[INFO ] [2021-04-14 02:37:45,065] Verify Customer ID In New Account - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:45,117]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:45,117] Verify Customer ID In New Account - Step 13: Enter Customer ID textbox with value abc
+[INFO ] [2021-04-14 02:37:45,254] Verify Customer ID In New Account - Step 14: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:45,301]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:45,301] Verify Customer ID In New Account - Step 14: Enter Customer ID textbox with value 123 12
+[INFO ] [2021-04-14 02:37:45,425] Verify Customer ID In New Account - Step 15: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:45,475]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:45,475] Verify Customer ID In New Account - Step 16: Enter Customer ID textbox with First character have space  
+[INFO ] [2021-04-14 02:37:45,605] Verify Customer ID In New Account - Step 17: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:45,661]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:45,664] Verify Intial Deposit In New Account - Step 01: Click to Intial Deposit textbox
+[INFO ] [2021-04-14 02:37:45,753] Verify Intial Deposit In New Account - Step 02: Press Tab key in Intial Deposit textbox
+[INFO ] [2021-04-14 02:37:45,987] Verify Intial Deposit In New Account - Step 03: Verify an error message 'Initial Deposit must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:46,033]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:46,033] Verify Intial Deposit In New Account - Step 04: Enter Intial Deposit textbox with value '123ABC'123abc
+[INFO ] [2021-04-14 02:37:46,165] Verify Intial Deposit In New Account - Step 05: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:46,213]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:46,213] Verify Intial Deposit In New Account - Step 06: Enter Intial Deposit textbox with value abc123
+[INFO ] [2021-04-14 02:37:46,350] Verify Intial Deposit In New Account - Step 07: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:46,399]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:46,399] Verify Intial Deposit In New Account - Step 08: Enter Intial Deposit textbox with value 123!@#
+[INFO ] [2021-04-14 02:37:46,522] Verify Intial Deposit In New Account - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:46,572]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:46,572] Verify Intial Deposit In New Account - Step 10: Enter Intial Deposit textbox with value !@#123
+[INFO ] [2021-04-14 02:37:46,714] Verify Intial Deposit In New Account - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:46,762]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:46,762] Verify Intial Deposit In New Account - Step 12: Enter Intial Deposit textbox with value 123 12
+[INFO ] [2021-04-14 02:37:46,894] Verify Intial Deposit In New Account - Step 13: Verify an error message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:46,946]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:46,946] Verify Intial Deposit In New Account - Step 14: Enter Intial Deposit textbox with First character have space  
+[INFO ] [2021-04-14 02:37:47,081] Verify Intial Deposit In New Account - Step 15: Verify an error message 'First character can not have space' is displayed
+[INFO ] [2021-04-14 02:37:47,129]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:47,132] New Account - Step 01: Click to Reset button in Add New Account form
+[INFO ] [2021-04-14 02:37:47,208] New Account - Step 02: Enter Customer ID textbox with value 94282
+[INFO ] [2021-04-14 02:37:47,328] New Account - Step 03: Select Account Type dropbox with value Savings
+[INFO ] [2021-04-14 02:37:47,412] New Account - Step 04: Enter Initial Deposit textbox with value 50000
+[INFO ] [2021-04-14 02:37:47,541] New Account - Step 05: Click to Submit button in Add New Account form
+[INFO ] [2021-04-14 02:37:48,655] New Account - Step 06: Verify Account Registered Successfully Message
+[INFO ] [2021-04-14 02:37:48,710]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:48,710] New Account - Step 07: Verify Customer ID with value 94282
+[INFO ] [2021-04-14 02:37:48,761]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:48,761] New Account - Step 08: Verify Customer Name with value tuan
+[INFO ] [2021-04-14 02:37:48,822]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:48,822] New Account - Step 09: Verify Customer Email with value test6522@gmail.com
+[INFO ] [2021-04-14 02:37:48,868]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:48,868] New Account - Step 10: Verify Account Type with value Savings
+[INFO ] [2021-04-14 02:37:48,918]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:48,918] New Account - Step 11: Verify Current Amount with value 50000
+[INFO ] [2021-04-14 02:37:48,978]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:49,044] OS name = windows 10
+[INFO ] [2021-04-14 02:37:49,745] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-04-14 02:37:53,811] Precondition - Step 01: Open Login Page
+[INFO ] [2021-04-14 02:37:53,811] Precondition - Step 02: Enter UserID in Textbox with value: mngr320060
+[INFO ] [2021-04-14 02:37:53,979] Precondition - Step 03: Enter Password in Textbox with value: ErusEbu
+[INFO ] [2021-04-14 02:37:54,122] Precondition - Step 04: Click Login button
+[INFO ] [2021-04-14 02:37:55,793] Precondition - Step 05: Verify homepage message after login successfull
+[INFO ] [2021-04-14 02:37:55,830]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:55,832] Verify Account Number - Step 01: Click to Edit Account in Navigation Menu Bar
+[INFO ] [2021-04-14 02:37:57,145] Verify Account Number - Step 02: Click to Account No textbox
+[INFO ] [2021-04-14 02:37:57,227] Verify Account Number - Step 03: Press Tab keyboard
+[INFO ] [2021-04-14 02:37:57,435] Verify Account Number - Step 04: Verify Error Message 'Account Number must not be blank' is displayed
+[INFO ] [2021-04-14 02:37:57,483]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:57,483] Verify Account Number - Step 05: Enter to Account No textbox with value 123abc
+[INFO ] [2021-04-14 02:37:57,604] Verify Account Number - Step 06: Verify Error Message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:57,647]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:57,647] Verify Account Number - Step 07: Enter to Account No textbox with value !@#
+[INFO ] [2021-04-14 02:37:57,789] Verify Account Number - Step 08: Verify Error Message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:57,834]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:57,834] Verify Account Number - Step 09: Enter to Account No textbox with value !@#123
+[INFO ] [2021-04-14 02:37:57,972] Verify Account Number - Step 10: Verify Error Message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:58,021]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:58,021] Verify Account Number - Step 11: Enter to Account No textbox with value 123 12
+[INFO ] [2021-04-14 02:37:58,158] Verify Account Number - Step 12: Verify Error Message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:58,207]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:58,207] Verify Account Number - Step 13: Enter to Account No textbox with value  
+[INFO ] [2021-04-14 02:37:58,340] Verify Account Number - Step 14: Verify Error Message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:37:58,395]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:58,398] Verify Balance - Step 01: Enter Acount No textbox with value: 91517
+[INFO ] [2021-04-14 02:37:58,541] Verify Balance - Step 02: Click to Submit button
+[INFO ] [2021-04-14 02:37:59,467] Verify Balance - Step 03: Verify Edit Account Entry Form is displayed
+[INFO ] [2021-04-14 02:37:59,524]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:37:59,525] OS name = windows 10
+[INFO ] [2021-04-14 02:38:00,202] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-04-14 02:38:04,611] Precondition - Step 01: Open Login Page
+[INFO ] [2021-04-14 02:38:04,611] Precondition - Step 02: Enter UserID in Textbox with value: mngr320060
+[INFO ] [2021-04-14 02:38:04,771] Precondition - Step 03: Enter Password in Textbox with value: ErusEbu
+[INFO ] [2021-04-14 02:38:04,921] Precondition - Step 04: Click Login button
+[INFO ] [2021-04-14 02:38:06,414] Precondition - Step 05: Verify homepage message after login successfull
+[INFO ] [2021-04-14 02:38:06,443]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:06,446] Verify Account Number - Step 01: Click to Edit Account in Navigation Menu Bar
+[INFO ] [2021-04-14 02:38:07,533] Verify Account Number - Step 02: Click to Account No textbox
+[INFO ] [2021-04-14 02:38:07,618] Verify Account Number - Step 03: Press Tab keyboard
+[INFO ] [2021-04-14 02:38:07,837] Verify Account Number - Step 04: Verify Error Message 'Account Number must not be blank' is displayed
+[INFO ] [2021-04-14 02:38:07,905]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:07,905] Verify Account Number - Step 05: Enter to Account No textbox with value 123abc
+[INFO ] [2021-04-14 02:38:08,058] Verify Account Number - Step 06: Verify Error Message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:38:08,101]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:08,101] Verify Account Number - Step 07: Enter to Account No textbox with value !@#
+[INFO ] [2021-04-14 02:38:08,239] Verify Account Number - Step 08: Verify Error Message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:38:08,286]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:08,286] Verify Account Number - Step 09: Enter to Account No textbox with value !@#123
+[INFO ] [2021-04-14 02:38:08,424] Verify Account Number - Step 10: Verify Error Message 'Special characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:38:08,471]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:08,471] Verify Account Number - Step 11: Enter to Account No textbox with value 123 12
+[INFO ] [2021-04-14 02:38:08,609] Verify Account Number - Step 12: Verify Error Message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:38:08,657]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:08,657] Verify Account Number - Step 13: Enter to Account No textbox with value  
+[INFO ] [2021-04-14 02:38:08,790] Verify Account Number - Step 14: Verify Error Message 'Characters are not allowed' is displayed
+[INFO ] [2021-04-14 02:38:08,846]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:08,848] Delete Account - Step 01: Enter Acount No textbox with value: 91517
+[INFO ] [2021-04-14 02:38:08,980] Delete Account - Step 02: Click to Submit button
+[INFO ] [2021-04-14 02:38:09,064] Delete Customer - Step 03: Verify Alert Message 'Do you really want to delete this Account?' is displayed
+[INFO ] [2021-04-14 02:38:09,066]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:09,066] Delete Customer - Step 04: Click to Ok button in Alert
+[INFO ] [2021-04-14 02:38:09,085] Delete Customer - Step 05: Verify Alert Message 'Account Deleted Sucessfully' is displayed
+[INFO ] [2021-04-14 02:38:09,641]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:09,641] Delete Customer - Step 06: Click to Ok button in Alert
+[INFO ] [2021-04-14 02:38:09,647] Delete Customer - Step 07: Click to Edit Customer in Navigation Menu bar
+[INFO ] [2021-04-14 02:38:10,931] Delete Customer - Step 08: Enter Customer ID textbox with value 91517
+[INFO ] [2021-04-14 02:38:11,081] Delete Customer - Step 09: Click to Submit button in Edit Customer Form
+[INFO ] [2021-04-14 02:38:11,472] Delete Customer - Step 10: Verify Alert Message 'Account does not exist' is displayed
+[INFO ] [2021-04-14 02:38:11,474]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-14 02:38:11,474] Delete Customer - Step 11: Click to Ok button in Alert
+[INFO ] [2021-04-14 02:38:11,488] OS name = windows 10
+[INFO ] [2021-04-14 02:38:12,727] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-04-14 02:38:17,228] Precondition - Step 01: Open Login Page
+[INFO ] [2021-04-14 02:38:17,229] Precondition - Step 02: Enter UserID in Textbox with value: mngr320060
+[INFO ] [2021-04-14 02:38:17,377] Precondition - Step 03: Enter Password in Textbox with value: ErusEbu
+[INFO ] [2021-04-14 02:38:17,523] Precondition - Step 04: Click Login button
+[INFO ] [2021-04-14 02:39:51,147] Precondition - Step 05: Verify homepage message after login successfull

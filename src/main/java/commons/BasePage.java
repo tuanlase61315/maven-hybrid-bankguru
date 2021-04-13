@@ -40,8 +40,7 @@ public class BasePage {
 	private Log log;
 	final String OLD_FORMAT = "MM/dd/yyyy";
 	final String NEW_FORMAT = "yyyy-MM-dd";
-	
-	
+
 	public String newFormatDate(String oldDateString) {
 		SimpleDateFormat sdf = new SimpleDateFormat(OLD_FORMAT);
 		Date d = null;
@@ -77,7 +76,7 @@ public class BasePage {
 		}
 	}
 
-	public String generateEmail() {
+	public static String generateEmail() {
 		Random rand = new Random();
 		return "test" + rand.nextInt(99999) + "@gmail.com";
 	}
@@ -193,7 +192,7 @@ public class BasePage {
 	public WebElement getElement(WebDriver driver, String locator) {
 		return driver.findElement(getByXpath(locator));
 	}
-	
+
 	public WebElement getElement(WebDriver driver, String locator, String... values) {
 		return driver.findElement(getByXpath(getDynamicLocator(locator, values)));
 	}
@@ -267,7 +266,7 @@ public class BasePage {
 	public String getTextElement(WebDriver driver, String locator, String... values) {
 		return getElement(driver, getDynamicLocator(locator, values)).getText();
 	}
-	
+
 	public int getElementSize(WebDriver driver, String locator) {
 		return getElements(driver, locator).size();
 	}
@@ -331,7 +330,7 @@ public class BasePage {
 		action = new Actions(driver);
 		action.sendKeys(getElement(driver, locator), key).perform();
 	}
-	
+
 	public void sendKeyboardToElement(WebDriver driver, String locator, Keys key, String... values) {
 		action = new Actions(driver);
 		action.sendKeys(getElement(driver, getDynamicLocator(locator, values)), key).perform();
@@ -744,7 +743,7 @@ public class BasePage {
 		}
 		return date;
 	}
-	
+
 	public static long getRandomNumberByDateTime() {
 		return Calendar.getInstance().getTimeInMillis() % 100000;
 	}
@@ -765,6 +764,8 @@ public class BasePage {
 		} else if (pageName.equals("New Account") || pageName.equals("Edit Account")
 				|| pageName.equals("Delete Account")) {
 			return PageGeneratorManager.getAccountPageObject(driver);
+		} else if (pageName.equals("Change Password")) {
+			return PageGeneratorManager.getUserPageObject(driver);
 		} else {
 			throw new RuntimeException("Please input the correct Page Name");
 		}
@@ -775,16 +776,17 @@ public class BasePage {
 		getElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
 		sendkeyToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, inputValue, textboxName);
 	}
-	
+
 	public void clickToTextboxByName(WebDriver driver, String textboxName) {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
 		clickToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
 	}
-	
+
 	public void sendTabKeyToTextboxByName(WebDriver driver, String textboxName) {
-		getElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName).clear();;
+		getElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName).clear();
+		;
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
-		sendKeyboardToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, Keys.TAB , textboxName);
+		sendKeyboardToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, Keys.TAB, textboxName);
 	}
 
 	public void clickToButtonByValue(WebDriver driver, String buttonValue) {
@@ -798,15 +800,15 @@ public class BasePage {
 			clickToElement(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_VALUE, raidoValue);
 		}
 	}
-	
+
 	public String getItemErrorMessageByTextboxName(WebDriver driver, String textboxName) {
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
 		return getTextElement(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
 	}
-	
-	public String getRegisteredAndEditedSuccessMessage(WebDriver driver) {
-		waitForElementVisible(driver, BasePageUI.REGISTERED_AND_EDITED_SUCCESS_MESSAGE);
-		return getTextElement(driver, BasePageUI.REGISTERED_AND_EDITED_SUCCESS_MESSAGE);
+
+	public String getHeadingMessage(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.HEADING_MESSAGE);
+		return getTextElement(driver, BasePageUI.HEADING_MESSAGE);
 	}
 
 }

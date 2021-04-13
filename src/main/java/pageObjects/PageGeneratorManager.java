@@ -25,5 +25,8 @@ public class PageGeneratorManager {
 	public static PaymentPageObject getPaymentPageObject(WebDriver driver) {
 		return new PaymentPageObject(driver);
 	}
-
+	
+	public static UserPageObject getUserPageObject(WebDriver driver) {
+		return new UserPageObject(driver);
+	}
 }

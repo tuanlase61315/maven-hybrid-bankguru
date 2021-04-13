@@ -5,8 +5,8 @@
 		<listener class-name="commons.MethodListener" />
 		<listener class-name="reportConfig.AllureTestListener" />
 		<listener class-name="reportConfig.ExtentListenerV4" />
-<!-- 		<listener class-name="reportConfig.ExtentListenerV3" /> -->
-<!-- 		<listener class-name="reportConfig.ExtentReportListenerVersion2" /> -->
+		<!-- <listener class-name="reportConfig.ExtentListenerV3" /> -->
+		<!-- <listener class-name="reportConfig.ExtentReportListenerVersion2" /> -->
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
@@ -18,8 +18,13 @@
 			<class name="com.bankguru.common.Common_01_Register" />
 			<class name="com.bankguru.customer.Customer_01_New_Customer" />
 			<class name="com.bankguru.customer.Customer_02_Edit_Customer" />
-			<class name="com.bankguru.customer.Customer_03_Delete_Customer" />
+
 			<class name="com.bankguru.account.Account_01_New_Account" />
+			<class name="com.bankguru.account.Account_02_Edit_Account" />
+			<class name="com.bankguru.account.Account_03_Delete_Account" />
+
+			<class name="com.bankguru.customer.Customer_03_Delete_Customer" />
+			<class name="com.bankguru.user.User_01_Change_Password" />
 		</classes>
 	</test>
 </suite> 

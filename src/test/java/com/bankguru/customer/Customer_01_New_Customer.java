@@ -6,20 +6,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.bankguru.common.Common_01_Register;
+import com.bankguru.testdata.UserData;
 
 import commons.BaseTest;
 import pageObjects.CustomerPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.PageGeneratorManager;
-import utilities.FakerConfig;
 
 public class Customer_01_New_Customer extends BaseTest {
 	WebDriver driver;
-	FakerConfig faker;
-	public static String cusID, cusName, cusDateOfBirth, cusAddress, cusCity, cusState, cusPin, cusMobileNumber, cusEmail,
-			cusPassword, cusDateOfBirthNew;
 	
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -29,11 +25,11 @@ public class Customer_01_New_Customer extends BaseTest {
 		log.info("Precondition - Step 01: Open Login Page");
 		loginPage = PageGeneratorManager.getLoginPage(driver);
 
-		log.info("Precondition - Step 02: Enter UserID in Textbox with value: " + Common_01_Register.userID);
-		loginPage.inputToTextboxByName(driver, "uid", Common_01_Register.userID);
+		log.info("Precondition - Step 02: Enter UserID in Textbox with value: " + UserData.Login.userID);
+		loginPage.inputToTextboxByName(driver, "uid", UserData.Login.userID);
 
-		log.info("Precondition - Step 03: Enter Password in Textbox with value: " + Common_01_Register.password);
-		loginPage.inputToTextboxByName(driver, "password", Common_01_Register.password);
+		log.info("Precondition - Step 03: Enter Password in Textbox with value: " + UserData.Login.password);
+		loginPage.inputToTextboxByName(driver, "password",UserData.Login.password);
 
 		log.info("Precondition - Step 04: Click Login button");
 		loginPage.clickToButtonByValue(driver, "LOGIN");
@@ -42,15 +38,6 @@ public class Customer_01_New_Customer extends BaseTest {
 		log.info("Precondition - Step 05: Verify homepage message after login successfull");
 		verifyTrue(homePage.isHomePageMessageDisplay());
 		
-		cusName = "tuan";
-		cusDateOfBirth = "10/01/1993";
-		cusAddress = "172 tay ninh";
-		cusCity = "tay ninh";
-		cusState = "abc";
-		cusPin = "123456";
-		cusMobileNumber = "0399992426";
-		cusEmail = homePage.generateEmail();
-		cusPassword = "123123";
 	}
 
 	@Test
@@ -68,34 +55,34 @@ public class Customer_01_New_Customer extends BaseTest {
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "name"),
 				"Customer name must not be blank");
 
-		log.info("Verify Name - Step 05: Enter Customer Name in Textbox with value: 1234");
-		customerPage.inputToTextboxByName(driver, "name", "1234");
+		log.info("Verify Name - Step 05: Enter Customer Name in Textbox with value: " + UserData.VerifyData.numeric);
+		customerPage.inputToTextboxByName(driver, "name", UserData.VerifyData.numeric);
 
 		log.info("Verify Name - Step 06: Verify an error message 'Numbers are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "name"), "Numbers are not allowed");
 
-		log.info("Verify Name - Step 07: Enter Customer Name in Textbox with value: name1234");
-		customerPage.inputToTextboxByName(driver, "name", "name1234");
+		log.info("Verify Name - Step 07: Enter Customer Name in Textbox with value: " +  UserData.VerifyData.numericAndCharacter);
+		customerPage.inputToTextboxByName(driver, "name", UserData.VerifyData.numericAndCharacter);
 
 		log.info("Verify Name - Step 08: Verify an error message 'Numbers are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "name"), "Numbers are not allowed");
 
-		log.info("Verify Name - Step 09: Enter Customer Name in Textbox with value: name!@#");
-		customerPage.inputToTextboxByName(driver, "name", "name!@#");
+		log.info("Verify Name - Step 09: Enter Customer Name in Textbox with value: name!@#" + UserData.VerifyData.specialAndCharacter);
+		customerPage.inputToTextboxByName(driver, "name", UserData.VerifyData.specialAndCharacter);
 
 		log.info("Verify Name - Step 10: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "name"),
 				"Special characters are not allowed");
 
-		log.info("Verify Name - Step 11: Enter Customer Name in Textbox with value: !@#");
-		customerPage.inputToTextboxByName(driver, "name", "!@#");
+		log.info("Verify Name - Step 11: Enter Customer Name in Textbox with value: !@#" + UserData.VerifyData.special);
+		customerPage.inputToTextboxByName(driver, "name", UserData.VerifyData.special);
 
 		log.info("Verify Name - Step 12: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "name"),
 				"Special characters are not allowed");
 
-		log.info("Verify Name - Step 13: Enter Customer Name in Textbox with 'First charater blank space'");
-		customerPage.inputToTextboxByName(driver, "name", " ");
+		log.info("Verify Name - Step 13: Enter Customer Name in Textbox with 'First charater blank space' " + UserData.VerifyData.firstCharacterIsSpace);
+		customerPage.inputToTextboxByName(driver, "name", UserData.VerifyData.firstCharacterIsSpace);
 
 		log.info("Verify Name - Step 14: Verify an error message 'First character can not have space' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "name"),
@@ -114,8 +101,8 @@ public class Customer_01_New_Customer extends BaseTest {
 		log.info("Verify Address - Step 03: Verify an error message 'Address Field must not be blank' is displayed");
 		verifyEquals(customerPage.getCustomerErrorMessageByTextarea(), "Address Field must not be blank");
 
-		log.info("Verify Address - Step 04: Enter Customer Adress in Textarea with 'First charater blank space'");
-		customerPage.inputToAddressTextarea(" ");
+		log.info("Verify Address - Step 04: Enter Customer Adress in Textarea with 'First charater blank space'" + UserData.VerifyData.firstCharacterIsSpace);
+		customerPage.inputToAddressTextarea(UserData.VerifyData.firstCharacterIsSpace);
 
 		log.info("Verify Address - Step 05: Verify an error message 'First character can not have space' is displayed");
 		verifyEquals(customerPage.getCustomerErrorMessageByTextarea(), "First character can not have space");
@@ -132,34 +119,34 @@ public class Customer_01_New_Customer extends BaseTest {
 		log.info("Verify City - Step 03: Verify an error message 'City Field must not be blank' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"), "City Field must not be blank");
 
-		log.info("Verify City - Step 04: Enter Customer City in Textbox with value: 1234");
-		customerPage.inputToTextboxByName(driver, "city", "1234");
+		log.info("Verify City - Step 04: Enter Customer City in Textbox with value: " + UserData.VerifyData.numeric);
+		customerPage.inputToTextboxByName(driver, "city", UserData.VerifyData.numeric);
 
 		log.info("Verify City - Step 05: Verify an error message 'Numbers are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"), "Numbers are not allowed");
 
-		log.info("Verify City - Step 06: Enter Customer City in Textbox with value: !name1234");
-		customerPage.inputToTextboxByName(driver, "city", "city1234");
+		log.info("Verify City - Step 06: Enter Customer City in Textbox with value: " + UserData.VerifyData.numericAndCharacter);
+		customerPage.inputToTextboxByName(driver, "city", UserData.VerifyData.numericAndCharacter);
 
 		log.info("Verify City - Step 07: Verify an error message 'Numbers are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"), "Numbers are not allowed");
 
-		log.info("Verify City - Step 08: Enter Customer City in Textbox with value: City!@#");
-		customerPage.inputToTextboxByName(driver, "city", "City!@#");
+		log.info("Verify City - Step 08: Enter Customer City in Textbox with value: " + UserData.VerifyData.specialAndCharacter);
+		customerPage.inputToTextboxByName(driver, "city", UserData.VerifyData.specialAndCharacter);
 
 		log.info("Verify City - Step 09: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"),
 				"Special characters are not allowed");
 
-		log.info("Verify City - Step 10: Enter Customer City in Textbox with value: !@#");
-		customerPage.inputToTextboxByName(driver, "city", "!@#");
+		log.info("Verify City - Step 10: Enter Customer City in Textbox with value: " + UserData.VerifyData.special);
+		customerPage.inputToTextboxByName(driver, "city", UserData.VerifyData.special);
 
 		log.info("Verify City - Step 11: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"),
 				"Special characters are not allowed");
 
-		log.info("Verify City - Step 12: Enter Customer City in Textbox with 'First charater blank space'");
-		customerPage.inputToTextboxByName(driver, "city", " ");
+		log.info("Verify City - Step 12: Enter Customer City in Textbox with 'First charater blank space'" + UserData.VerifyData.firstCharacterIsSpace);
+		customerPage.inputToTextboxByName(driver, "city", UserData.VerifyData.firstCharacterIsSpace);
 
 		log.info("Verify City - Step 13: Verify an error message 'First character can not have space' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "city"),
@@ -178,34 +165,34 @@ public class Customer_01_New_Customer extends BaseTest {
 		log.info("Verify State - Step 03: Verify an error message 'State must not be blank' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"), "State must not be blank");
 
-		log.info("Verify State - Step 04: Enter Customer State in Textbox with value: 1234");
-		customerPage.inputToTextboxByName(driver, "state", "1234");
+		log.info("Verify State - Step 04: Enter Customer State in Textbox with value: " + UserData.VerifyData.numeric);
+		customerPage.inputToTextboxByName(driver, "state", UserData.VerifyData.numeric);
 
 		log.info("Verify State - Step 05: Verify an error message 'Numbers are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"), "Numbers are not allowed");
 
-		log.info("Verify State - Step 06: Enter Customer State in Textbox with value: state1234");
-		customerPage.inputToTextboxByName(driver, "state", "state1234");
+		log.info("Verify State - Step 06: Enter Customer State in Textbox with value: " + UserData.VerifyData.numericAndCharacter);
+		customerPage.inputToTextboxByName(driver, "state", UserData.VerifyData.numericAndCharacter);
 
 		log.info("Verify State - Step 07: Verify an error message 'Numbers are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"), "Numbers are not allowed");
 
-		log.info("Verify State - Step 08: Enter Customer State in Textbox with value: State!@#");
-		customerPage.inputToTextboxByName(driver, "state", "State!@#");
+		log.info("Verify State - Step 08: Enter Customer State in Textbox with value: " + UserData.VerifyData.specialAndCharacter);
+		customerPage.inputToTextboxByName(driver, "state", UserData.VerifyData.specialAndCharacter);
 
 		log.info("Verify State - Step 09: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"),
 				"Special characters are not allowed");
 
-		log.info("Verify State - Step 10: Enter Customer State in Textbox with value: !@#");
-		customerPage.inputToTextboxByName(driver, "state", "!@#");
+		log.info("Verify State - Step 10: Enter Customer State in Textbox with value: " + UserData.VerifyData.special);
+		customerPage.inputToTextboxByName(driver, "state", UserData.VerifyData.special);
 
 		log.info("Verify State - Step 11: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"),
 				"Special characters are not allowed");
 
-		log.info("Verify State - Step 12: Enter Customer State in Textbox with 'First charater blank space'");
-		customerPage.inputToTextboxByName(driver, "state", " ");
+		log.info("Verify State - Step 12: Enter Customer State in Textbox with 'First charater blank space' " + UserData.VerifyData.firstCharacterIsSpace);
+		customerPage.inputToTextboxByName(driver, "state", UserData.VerifyData.firstCharacterIsSpace);
 
 		log.info("Verify State - Step 13: Verify an error message 'First character can not have space' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "state"),
@@ -224,47 +211,47 @@ public class Customer_01_New_Customer extends BaseTest {
 		log.info("Verify PIN - Step 03: Verify an error message 'PIN Code must not be blank' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "PIN Code must not be blank");
 
-		log.info("Verify PIN - Step 04: Enter Customer PIN in Textbox with value: 1234");
-		customerPage.inputToTextboxByName(driver, "pinno", "1234");
+		log.info("Verify PIN - Step 04: Enter Customer PIN in Textbox with value: " + UserData.VerifyData.digitLessThanSix);
+		customerPage.inputToTextboxByName(driver, "pinno", UserData.VerifyData.digitLessThanSix);
 
 		log.info("Verify PIN - Step 05: Verify an error message 'PIN Code must have 6 Digits' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "PIN Code must have 6 Digits");
 
-		log.info("Verify PIN - Step 06: Enter Customer PIN in Textbox with value: PIN1234");
-		customerPage.inputToTextboxByName(driver, "pinno", "PIN1234");
+		log.info("Verify PIN - Step 06: Enter Customer PIN in Textbox with value: " + UserData.VerifyData.numericAndCharacter);
+		customerPage.inputToTextboxByName(driver, "pinno", UserData.VerifyData.numericAndCharacter);
 
 		log.info("Verify PIN - Step 07: Verify an error message 'Numbers are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "Characters are not allowed");
 
-		log.info("Verify PIN - Step 08: Enter Customer PIN in Textbox with value: PIN!@#");
-		customerPage.inputToTextboxByName(driver, "pinno", "PIN!@#");
+		log.info("Verify PIN - Step 08: Enter Customer PIN in Textbox with value: " + UserData.VerifyData.specialAndCharacter);
+		customerPage.inputToTextboxByName(driver, "pinno", UserData.VerifyData.specialAndCharacter);
 
 		log.info("Verify PIN - Step 09: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"),
 				"Special characters are not allowed");
 
-		log.info("Verify PIN - Step 10: Enter Customer PIN in Textbox with value: !@#");
-		customerPage.inputToTextboxByName(driver, "pinno", "!@#");
+		log.info("Verify PIN - Step 10: Enter Customer PIN in Textbox with value: " + UserData.VerifyData.special);
+		customerPage.inputToTextboxByName(driver, "pinno", UserData.VerifyData.special);
 
 		log.info("Verify PIN - Step 11: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"),
 				"Special characters are not allowed");
 
-		log.info("Verify PIN - Step 12: Enter Customer PIN in Textbox with 'First charater blank space'");
-		customerPage.inputToTextboxByName(driver, "pinno", " ");
+		log.info("Verify PIN - Step 12: Enter Customer PIN in Textbox with 'First charater blank space' " + UserData.VerifyData.firstCharacterIsSpace);
+		customerPage.inputToTextboxByName(driver, "pinno", UserData.VerifyData.firstCharacterIsSpace);
 
 		log.info("Verify PIN - Step 13: Verify an error message 'First character can not have space' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"),
 				"First character can not have space");
 
-		log.info("Verify PIN - Step 14: Enter Customer PIN in Textbox with value: 123");
-		customerPage.inputToTextboxByName(driver, "pinno", "123");
+		log.info("Verify PIN - Step 14: Enter Customer PIN in Textbox with value: " + UserData.VerifyData.digitLessThanSix);
+		customerPage.inputToTextboxByName(driver, "pinno", UserData.VerifyData.digitLessThanSix);
 
 		log.info("Verify PIN - Step 15: Verify an error message 'PIN Code must have 6 Digits' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "PIN Code must have 6 Digits");
 
-		log.info("Verify PIN - Step 16: Enter Customer PIN in Textbox with value: '123 12'");
-		customerPage.inputToTextboxByName(driver, "pinno", "123 12");
+		log.info("Verify PIN - Step 16: Enter Customer PIN in Textbox with value: " + UserData.VerifyData.numericAndBlank);
+		customerPage.inputToTextboxByName(driver, "pinno", UserData.VerifyData.numericAndBlank);
 
 		log.info("Verify PIN - Step 17: Verify an error message 'Characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "pinno"), "Characters are not allowed");
@@ -282,39 +269,39 @@ public class Customer_01_New_Customer extends BaseTest {
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"),
 				"Mobile no must not be blank");
 
-		log.info("Verify Telephone - Step 04: Enter Customer Telephone in Textbox with 'First charater blank space'");
-		customerPage.inputToTextboxByName(driver, "telephoneno", " ");
+		log.info("Verify Telephone - Step 04: Enter Customer Telephone in Textbox with 'First charater blank space' " + UserData.VerifyData.firstCharacterIsSpace);
+		customerPage.inputToTextboxByName(driver, "telephoneno", UserData.VerifyData.firstCharacterIsSpace);
 
 		log.info(
 				"Verify Telephone - Step 05: Verify an error message 'First character can not have space' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"),
 				"First character can not have space");
 
-		log.info("Verify Telephone - Step 06: Enter Customer Telephone in Textbox with value: '123 1213'");
-		customerPage.inputToTextboxByName(driver, "telephoneno", "123 1213");
+		log.info("Verify Telephone - Step 06: Enter Customer Telephone in Textbox with value: " + UserData.VerifyData.numericAndBlank);
+		customerPage.inputToTextboxByName(driver, "telephoneno", UserData.VerifyData.numericAndBlank);
 
 		log.info("Verify Telephone - Step 07: Verify an error message 'Characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"),
 				"Characters are not allowed");
 
-		log.info("Verify Telephone - Step 08: Enter Customer State in Textbox with value: 888!123123");
-		customerPage.inputToTextboxByName(driver, "telephoneno", "888!123123");
+		log.info("Verify Telephone - Step 08: Enter Customer State in Textbox with value: " + UserData.VerifyData.numericAndSpecial);
+		customerPage.inputToTextboxByName(driver, "telephoneno", UserData.VerifyData.numericAndSpecial);
 
 		log.info(
 				"Verify Telephone - Step 09: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"),
 				"Special characters are not allowed");
 
-		log.info("Verify Telephone - Step 10: Enter Customer State in Textbox with value: !888123123");
-		customerPage.inputToTextboxByName(driver, "telephoneno", "!888123123");
+		log.info("Verify Telephone - Step 10: Enter Customer State in Textbox with value: " + UserData.VerifyData.specialAndNumeric);
+		customerPage.inputToTextboxByName(driver, "telephoneno", UserData.VerifyData.specialAndNumeric);
 
 		log.info(
 				"Verify Telephone - Step 11: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "telephoneno"),
 				"Special characters are not allowed");
 
-		log.info("Verify Telephone - Step 12: Enter Customer State in Textbox with value: 888123123!");
-		customerPage.inputToTextboxByName(driver, "telephoneno", "888123123!");
+		log.info("Verify Telephone - Step 12: Enter Customer State in Textbox with value: " + UserData.VerifyData.special);
+		customerPage.inputToTextboxByName(driver, "telephoneno", UserData.VerifyData.special);
 
 		log.info(
 				"Verify Telephone - Step 13: Verify an error message 'Special characters are not allowed' is displayed");
@@ -335,38 +322,38 @@ public class Customer_01_New_Customer extends BaseTest {
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"),
 				"Email-ID must not be blank");
 
-		log.info("Verify Email - Step 04: Enter Customer Email in Textbox with value: 'test222@gmail'");
-		customerPage.inputToTextboxByName(driver, "emailid", "test222@gmail");
+		log.info("Verify Email - Step 04: Enter Customer Email in Textbox with value: " + UserData.VerifyData.emailNotCom);
+		customerPage.inputToTextboxByName(driver, "emailid", UserData.VerifyData.emailNotCom);
 
 		log.info("Verify Email - Step 05: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 
-		log.info("Verify Email - Step 06: Enter Customer Email in Textbox with value: 'test222'");
-		customerPage.inputToTextboxByName(driver, "emailid", "test222");
+		log.info("Verify Email - Step 06: Enter Customer Email in Textbox with value: " + UserData.VerifyData.emailOnlyName);
+		customerPage.inputToTextboxByName(driver, "emailid",  UserData.VerifyData.emailOnlyName);
 
 		log.info("Verify Email - Step 07: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 
-		log.info("Verify Email - Step 08: Enter Customer Email in Textbox with value: 'test222@'");
-		customerPage.inputToTextboxByName(driver, "emailid", "test222@");
+		log.info("Verify Email - Step 08: Enter Customer Email in Textbox with value: " +  UserData.VerifyData.emailNotGmailDotCom);
+		customerPage.inputToTextboxByName(driver, "emailid", UserData.VerifyData.emailNotGmailDotCom);
 
-		log.info("Verify Email - Step 09: Verify an error message 'Special characters are not allowed' is displayed");
+		log.info("Verify Email - Step 09: Verify an error message 'Email-ID is not valid' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 
-		log.info("Verify Email - Step 10: Enter Customer Email in Textbox with value: 'test222@gmail.'");
-		customerPage.inputToTextboxByName(driver, "emailid", "test222@gmail.");
+		log.info("Verify Email - Step 10: Enter Customer Email in Textbox with value: " + UserData.VerifyData.emailNotCom);
+		customerPage.inputToTextboxByName(driver, "emailid", UserData.VerifyData.emailNotCom);
 
-		log.info("Verify Email - Step 11: Verify an error message 'Special characters are not allowed' is displayed");
+		log.info("Verify Email - Step 11: Verify an error message 'Email-ID is not valid' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 
-		log.info("Verify Email - Step 12: Enter Customer Email in Textbox with value: 'test222gmail.com'");
-		customerPage.inputToTextboxByName(driver, "emailid", "test222gmail.com");
+		log.info("Verify Email - Step 12: Enter Customer Email in Textbox with value: 'test222gmail.com'" + UserData.VerifyData.emailNotFormat);
+		customerPage.inputToTextboxByName(driver, "emailid", UserData.VerifyData.emailNotFormat);
 
-		log.info("Verify Email - Step 13: Verify an error message 'Special characters are not allowed' is displayed");
+		log.info("Verify Email - Step 13: Verify an error message 'Email-ID is not valid' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"), "Email-ID is not valid");
 
-		log.info("Verify Email - Step 14: Enter Customer Email in Textbox with 'First charater blank space'");
-		customerPage.inputToTextboxByName(driver, "emailid", " ");
+		log.info("Verify Email - Step 14: Enter Customer Email in Textbox with 'First charater blank space' " + UserData.VerifyData.firstCharacterIsSpace);
+		customerPage.inputToTextboxByName(driver, "emailid", UserData.VerifyData.firstCharacterIsSpace);
 
 		log.info("Verify Email - Step 15: Verify an error message 'First character can not have space' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "emailid"),
@@ -479,70 +466,70 @@ public class Customer_01_New_Customer extends BaseTest {
 		log.info("New Customer - Step 01: Open New Customer Page");
 		customerPage = (CustomerPageObject) homePage.clickToMenuNavByName(driver, "New Customer");
 
-		log.info("New Customer - Step 02: Enter Customer Name in Textbox with value: " + cusName);
-		customerPage.inputToTextboxByName(driver, "name", cusName);
+		log.info("New Customer - Step 02: Enter Customer Name in Textbox with value: " + UserData.Customer.cusName);
+		customerPage.inputToTextboxByName(driver, "name", UserData.Customer.cusName);
 
 		log.info("New Customer - Step 03: Select Female Gender");
 		customerPage.clickToRadioButtonByValue(driver, "f");
 
-		log.info("New Customer - Step 04: Enter Data of Birth with value: " + cusDateOfBirth);
-		customerPage.inputToTextboxByName(driver, "dob", cusDateOfBirth);
+		log.info("New Customer - Step 04: Enter Data of Birth with value: " + UserData.Customer.cusDateOfBirth);
+		customerPage.inputToTextboxByName(driver, "dob", UserData.Customer.cusDateOfBirth);
 		
 		
-		log.info("New Customer - Step 05:  Enter Customer Address in Textbox with value: " + cusAddress);
-		customerPage.inputToAddressTextarea(cusAddress);
+		log.info("New Customer - Step 05:  Enter Customer Address in Textbox with value: " + UserData.Customer.cusAddress);
+		customerPage.inputToAddressTextarea(UserData.Customer.cusAddress);
 
-		log.info("New Customer - Step 06:  Enter Customer City in Textbox with value: " + cusCity);
-		customerPage.inputToTextboxByName(driver, "city", cusCity);
+		log.info("New Customer - Step 06:  Enter Customer City in Textbox with value: " + UserData.Customer.cusCity);
+		customerPage.inputToTextboxByName(driver, "city", UserData.Customer.cusCity);
 
-		log.info("New Customer - Step 07:  Enter Customer State in Textbox with value: " + cusState);
-		customerPage.inputToTextboxByName(driver, "state", cusState);
+		log.info("New Customer - Step 07:  Enter Customer State in Textbox with value: " + UserData.Customer.cusState);
+		customerPage.inputToTextboxByName(driver, "state", UserData.Customer.cusState);
 
-		log.info("New Customer - Step 08:  Enter Customer PIN in Textbox with value: " + cusPin);
-		customerPage.inputToTextboxByName(driver, "pinno", cusPin);
+		log.info("New Customer - Step 08:  Enter Customer PIN in Textbox with value: " + UserData.Customer.cusPin);
+		customerPage.inputToTextboxByName(driver, "pinno", UserData.Customer.cusPin);
 
-		log.info("New Customer - Step 09: Enter Customer Mobile Phone in Textbox with value: " + cusMobileNumber);
-		customerPage.inputToTextboxByName(driver, "telephoneno", cusMobileNumber);
+		log.info("New Customer - Step 09: Enter Customer Mobile Phone in Textbox with value: " + UserData.Customer.cusMobileNumber);
+		customerPage.inputToTextboxByName(driver, "telephoneno", UserData.Customer.cusMobileNumber);
 
-		log.info("New Customer - Step 10: Enter Customer Email in Textbox with value: " + cusEmail);
-		customerPage.inputToTextboxByName(driver, "emailid", cusEmail);
+		log.info("New Customer - Step 10: Enter Customer Email in Textbox with value: " + UserData.Customer.cusEmail);
+		customerPage.inputToTextboxByName(driver, "emailid", UserData.Customer.cusEmail);
 
-		log.info("New Customer - Step 11: Enter Customer Password in Textbox with value: " + cusPassword);
-		customerPage.inputToTextboxByName(driver, "password", cusPassword);
+		log.info("New Customer - Step 11: Enter Customer Password in Textbox with value: " + UserData.Customer.cusPassword);
+		customerPage.inputToTextboxByName(driver, "password", UserData.Customer.cusPassword);
 
 		log.info("New Customer - Step 12: Click button Submit");
 		customerPage.clickToButtonByValue(driver, "Submit");
 
 		log.info("New Customer - Step 13: Verify Customer Registered Successfully Message");
-		verifyEquals(customerPage.getRegisteredAndEditedSuccessMessage(driver), "Customer Registered Successfully!!!");
+		verifyEquals(customerPage.getHeadingMessage(driver), "Customer Registered Successfully!!!");
 		
-		log.info("New Customer - Step 14: Verify Customer Name with value " + cusName);
-		verifyEquals(customerPage.getCustomerInfoByText("Customer Name"), cusName);
+		log.info("New Customer - Step 14: Verify Customer Name with value " + UserData.Customer.cusName);
+		verifyEquals(customerPage.getCustomerInfoByText("Customer Name"), UserData.Customer.cusName);
 		
 		log.info("New Customer - Step 15: Verify Customer Gender with value Female" );
 		verifyEquals(customerPage.getCustomerInfoByText("Gender"), "female");		
-		cusDateOfBirthNew = customerPage.newFormatDate(cusDateOfBirth);
+		UserData.Customer.cusDateOfBirthNew = customerPage.newFormatDate(UserData.Customer.cusDateOfBirth);
 		
-		log.info("New Customer - Step 16: Verify Customer Birthdate with value " + cusDateOfBirthNew);
-		verifyEquals(customerPage.getCustomerInfoByText("Birthdate"), cusDateOfBirthNew);
+		log.info("New Customer - Step 16: Verify Customer Birthdate with value " + UserData.Customer.cusDateOfBirthNew);
+		verifyEquals(customerPage.getCustomerInfoByText("Birthdate"), UserData.Customer.cusDateOfBirthNew);
 		
-		log.info("New Customer - Step 17: Verify Customer Address with value " + cusAddress);
-		verifyEquals(customerPage.getCustomerInfoByText("Address"), cusAddress);
+		log.info("New Customer - Step 17: Verify Customer Address with value " + UserData.Customer.cusAddress);
+		verifyEquals(customerPage.getCustomerInfoByText("Address"), UserData.Customer.cusAddress);
 		
-		log.info("New Customer - Step 18: Verify Customer State with value " + cusState);
-		verifyEquals(customerPage.getCustomerInfoByText("State"), cusState);
+		log.info("New Customer - Step 18: Verify Customer State with value " + UserData.Customer.cusState);
+		verifyEquals(customerPage.getCustomerInfoByText("State"), UserData.Customer.cusState);
 		
-		log.info("New Customer - Step 19: Verify Customer Pin with value " + cusPin);
-		verifyEquals(customerPage.getCustomerInfoByText("Pin"), cusPin);
+		log.info("New Customer - Step 19: Verify Customer Pin with value " + UserData.Customer.cusPin);
+		verifyEquals(customerPage.getCustomerInfoByText("Pin"), UserData.Customer.cusPin);
 		
-		log.info("New Customer - Step 20: Verify Customer Mobile No with value " + cusMobileNumber);
-		verifyEquals(customerPage.getCustomerInfoByText("Mobile No."), cusMobileNumber);
+		log.info("New Customer - Step 20: Verify Customer Mobile No with value " + UserData.Customer.cusMobileNumber);
+		verifyEquals(customerPage.getCustomerInfoByText("Mobile No."), UserData.Customer.cusMobileNumber);
 		
-		log.info("New Customer - Step 21: Verify Customer Email with value " + cusEmail);
-		verifyEquals(customerPage.getCustomerInfoByText("Email"), cusEmail);
+		log.info("New Customer - Step 21: Verify Customer Email with value " + UserData.Customer.cusEmail);
+		verifyEquals(customerPage.getCustomerInfoByText("Email"), UserData.Customer.cusEmail);
 		
-		cusID = customerPage.getCustomerInfoByText("Customer ID");
-
+		UserData.Customer.cusID = customerPage.getCustomerInfoByText("Customer ID");
+		System.out.println("Customer ID : " + UserData.Customer.cusID);
 	}
 	
 

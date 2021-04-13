@@ -22,6 +22,17 @@ public class AccountPageObject extends BasePage{
 		waitForAllElementVisible(driver, AccountPageUI.DYNAMIC_ACCOUNT_INFO_BY_TEXT, itemText);
 		return getTextElement(driver, AccountPageUI.DYNAMIC_ACCOUNT_INFO_BY_TEXT, itemText);
 	}
+
+	public AccountPageObject acceptAlertInEditAccount(WebDriver driver2) {
+		acceptAlert(driver);
+		return PageGeneratorManager.getAccountPageObject(driver);
+		
+	}
+
+	public HomePageObject acceptDeleteAccountAlert() {
+		acceptAlert(driver);
+		return PageGeneratorManager.getHomePageObject(driver);
+	}
 	
 	
 }

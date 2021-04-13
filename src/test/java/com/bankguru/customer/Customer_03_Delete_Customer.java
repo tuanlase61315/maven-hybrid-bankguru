@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.bankguru.common.Common_01_Register;
+import com.bankguru.testdata.UserData;
 
 import commons.BaseTest;
 import pageObjects.CustomerPageObject;
@@ -25,11 +25,11 @@ public class Customer_03_Delete_Customer extends BaseTest{
 		log.info("Precondition - Step 01: Open Login Page");
 		loginPage = PageGeneratorManager.getLoginPage(driver);
 
-		log.info("Precondition - Step 02: Enter UserID in Textbox with value: " + Common_01_Register.userID);
-		loginPage.inputToTextboxByName(driver, "uid", Common_01_Register.userID);
+		log.info("Precondition - Step 02: Enter UserID in Textbox with value: " + UserData.Login.userID);
+		loginPage.inputToTextboxByName(driver, "uid", UserData.Login.userID);
 
-		log.info("Precondition - Step 03: Enter Password in Textbox with value: " + Common_01_Register.password);
-		loginPage.inputToTextboxByName(driver, "password", Common_01_Register.password);
+		log.info("Precondition - Step 03: Enter Password in Textbox with value: " + UserData.Login.password);
+		loginPage.inputToTextboxByName(driver, "password", UserData.Login.password);
 
 		log.info("Precondition - Step 04: Click Login button");
 		loginPage.clickToButtonByValue(driver, "LOGIN");
@@ -55,36 +55,36 @@ public class Customer_03_Delete_Customer extends BaseTest{
 		log.info("Verify CustomerID - Step 04: Verify an error message 'Customer ID is required' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Customer ID is required");
 
-		log.info("Verify CustomerID - Step 05: Enter Customer ID textbox with value '1234Acc'");
-		customerPage.inputToTextboxByName(driver, "cusid", "1234Acc");
+		log.info("Verify CustomerID - Step 05: Enter Customer ID textbox with value " + UserData.VerifyData.numericAndCharacter);
+		customerPage.inputToTextboxByName(driver, "cusid", UserData.VerifyData.numericAndCharacter);
 
 		log.info("Verify CustomerID - Step 06: Verify an error message 'Characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
-		log.info("Verify CustomerID - Step 07: Enter Customer ID textbox with value 'Acc123'");
-		customerPage.inputToTextboxByName(driver, "cusid", "Acc123");
+		log.info("Verify CustomerID - Step 07: Enter Customer ID textbox with value " + UserData.VerifyData.characterAndNumberic);
+		customerPage.inputToTextboxByName(driver, "cusid", UserData.VerifyData.characterAndNumberic);
 
 		log.info("Verify CustomerID - Step 08: Verify an error message 'Characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
 
-		log.info("Verify CustomerID - Step 09: Enter Customer ID textbox with value '123!@#'");
-		customerPage.inputToTextboxByName(driver, "cusid", "123!@#");
+		log.info("Verify CustomerID - Step 09: Enter Customer ID textbox with value '123!@#'" + UserData.VerifyData.numericAndSpecial);
+		customerPage.inputToTextboxByName(driver, "cusid", UserData.VerifyData.numericAndSpecial);
 
 		log.info(
 				"Verify CustomerID - Step 10: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"Special characters are not allowed");
 
-		log.info("Verify CustomerID - Step 11: Enter Customer ID textbox with value '!@#'");
-		customerPage.inputToTextboxByName(driver, "cusid", "!@#");
+		log.info("Verify CustomerID - Step 11: Enter Customer ID textbox with value " + UserData.VerifyData.special);
+		customerPage.inputToTextboxByName(driver, "cusid", UserData.VerifyData.special);
 
 		log.info(
 				"Verify CustomerID - Step 12: Verify an error message 'Special characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"),
 				"Special characters are not allowed");
 
-		log.info("Verify CustomerID - Step 13: Enter Customer ID textbox with value 'xyz'");
-		customerPage.inputToTextboxByName(driver, "cusid", "xyz");
+		log.info("Verify CustomerID - Step 13: Enter Customer ID textbox with value 'xyz'" + UserData.VerifyData.character);
+		customerPage.inputToTextboxByName(driver, "cusid", UserData.VerifyData.character);
 
 		log.info("Verify CustomerID - Step 14: Verify an error message 'Characters are not allowed' is displayed");
 		verifyEquals(customerPage.getItemErrorMessageByTextboxName(driver, "cusid"), "Characters are not allowed");
@@ -92,8 +92,8 @@ public class Customer_03_Delete_Customer extends BaseTest{
 	
 	@Test
 	public void Delete_Customer_02_Delete_Customer_With_Valid_Value() {
-		log.info("Delete Customer - Step 01: Enter Customer ID textbox with value " + Customer_01_New_Customer.cusID);
-		customerPage.inputToTextboxByName(driver, "cusid", Customer_01_New_Customer.cusID);
+		log.info("Delete Customer - Step 01: Enter Customer ID textbox with value " + UserData.Customer.cusID);
+		customerPage.inputToTextboxByName(driver, "cusid", UserData.Customer.cusID);
 		
 		log.info("Delete Customer - Step 02: Click to Submit button in Delete Customer Form");
 		customerPage.clickToButtonByValue(driver, "Submit");
@@ -113,8 +113,8 @@ public class Customer_03_Delete_Customer extends BaseTest{
 		log.info("Delete Customer - Step 07: Click to Edit Customer in Navigation Menu bar");
 		customerPage = (CustomerPageObject) homePage.clickToMenuNavByName(driver, "Edit Customer");
 		
-		log.info("Delete Customer - Step 08: Enter Customer ID textbox with value " + Customer_01_New_Customer.cusID);
-		customerPage.inputToTextboxByName(driver, "cusid", Customer_01_New_Customer.cusID);
+		log.info("Delete Customer - Step 08: Enter Customer ID textbox with value " + UserData.Customer.cusID);
+		customerPage.inputToTextboxByName(driver, "cusid", UserData.Customer.cusID);
 		
 		log.info("Delete Customer - Step 09: Click to Submit button in Edit Customer Form");
 		customerPage.clickToButtonByValue(driver, "Submit");
@@ -124,9 +124,6 @@ public class Customer_03_Delete_Customer extends BaseTest{
 		
 		log.info("Delete Customer - Step 11: Click to Ok button in Alert");
 		homePage = customerPage.acceptDeleteCustomerAlert();
-		
-		
-		
 		
 	}
 	
