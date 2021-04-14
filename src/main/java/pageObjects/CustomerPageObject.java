@@ -43,7 +43,7 @@ public class CustomerPageObject extends BasePage {
 
 	public String getCustomerInfoByText(String itemText) {
 		waitForAllElementVisible(driver, CustomerPageUI.DYNAMIC_CUSTOMER_INFO_BY_TEXT, itemText);
-		return getTextElement(driver, CustomerPageUI.DYNAMIC_CUSTOMER_INFO_BY_TEXT, itemText);
+		return getElementText(driver, CustomerPageUI.DYNAMIC_CUSTOMER_INFO_BY_TEXT, itemText);
 	}
 
 	public HomePageObject acceptDeleteCustomerAlert() {

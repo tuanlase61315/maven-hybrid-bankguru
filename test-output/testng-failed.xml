@@ -12,52 +12,21 @@
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.bankguru.customer.Customer_02_Edit_Customer">
+      <class name="com.bankguru.account.Account_04_Mini_Statement">
         <methods>
-          <include name="Edit_Customer_01_Verify_CustomerID"/>
-          <include name="afterClass"/>
-          <include name="Edit_Customer_06_Verify_Telephone_Field"/>
-          <include name="Edit_Customer_04_Verify_State_Field"/>
-          <include name="beforeClass"/>
-          <include name="Edit_Customer_02_Verify_Address_Field"/>
-          <include name="Edit_Customer_05_Verify_PIN_Field"/>
-          <include name="Edit_Customer_07_Verify_Email_Field"/>
-          <include name="Edit_Customer_08_Edit_With_Valid_Value"/>
-          <include name="Edit_Customer_03_Verify_City_Field"/>
-        </methods>
-      </class> <!-- com.bankguru.customer.Customer_02_Edit_Customer -->
-      <class name="com.bankguru.account.Account_01_New_Account">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="New_Account_03_New_Account_With_Valid_Data"/>
-          <include name="New_Account_02_Verify_Intial_Deposit"/>
-          <include name="afterClass"/>
-          <include name="New_Account_01_Verify_Customer_ID"/>
-        </methods>
-      </class> <!-- com.bankguru.account.Account_01_New_Account -->
-      <class name="com.bankguru.customer.Customer_01_New_Customer">
-        <methods>
-          <include name="New_Customer_09_New_Customer_With_Valid_Data"/>
-          <include name="New_Customer_01_Verify_Name_Field"/>
-          <include name="New_Customer_08_Verify_All_Field_Requirement"/>
-          <include name="New_Customer_02_Verify_Address_Field"/>
-          <include name="New_Customer_04_Verify_State_Field"/>
-          <include name="afterClass"/>
-          <include name="New_Customer_03_Verify_City_Field"/>
-          <include name="New_Customer_05_Verify_PIN_Field"/>
-          <include name="New_Customer_06_Verify_Telephone_Field"/>
-          <include name="New_Customer_07_Verify_Email_Field"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.bankguru.customer.Customer_01_New_Customer -->
-      <class name="com.bankguru.customer.Customer_03_Delete_Customer">
-        <methods>
-          <include name="Delete_Customer_02_Delete_Customer_With_Valid_Value"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="Delete_Customer_01_Verify_Customer_ID"/>
+          <include name="Mini_Statement_01_Verify_Account_No"/>
+          <include name="Mini_Statement_02_Verify_Data_Table"/>
         </methods>
-      </class> <!-- com.bankguru.customer.Customer_03_Delete_Customer -->
+      </class> <!-- com.bankguru.account.Account_04_Mini_Statement -->
+      <class name="com.bankguru.account.Account_02_Edit_Account">
+        <methods>
+          <include name="Edit_Account_02_Verify_Balance"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.bankguru.account.Account_02_Edit_Account -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [BankGuru] -->

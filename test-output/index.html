@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-BankGuru">
-              <span class="suite-name border-skipped">BankGuru</span>
+              <span class="suite-name border-failed">BankGuru</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods,  22 skipped,  </span>
+                    <span class="method-stats">24 methods, 1 failed,  2 skipped,  21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BankGuru" class="hide-methods failed suite-BankGuru"> (hide)</a> <!-- hide-methods failed suite-BankGuru -->
+                      <a href="#" panel-name="suite-BankGuru" class="show-methods failed suite-BankGuru"> (show)</a> <!-- show-methods failed suite-BankGuru -->
+                    </span>
+                    <div class="method-list-content failed suite-BankGuru">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.account.Account_02_Edit_Account" hash-for-method="Edit_Account_02_Verify_Balance">Edit_Account_02_Verify_Balance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BankGuru -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -102,115 +116,129 @@
                     <div class="method-list-content skipped suite-BankGuru">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_03_Delete_Customer" hash-for-method="Delete_Customer_01_Verify_Customer_ID">Delete_Customer_01_Verify_Customer_ID</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.account.Account_04_Mini_Statement" hash-for-method="Mini_Statement_01_Verify_Account_No">Mini_Statement_01_Verify_Account_No</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_03_Delete_Customer" hash-for-method="Delete_Customer_02_Delete_Customer_With_Valid_Value">Delete_Customer_02_Delete_Customer_With_Valid_Value</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.account.Account_04_Mini_Statement" hash-for-method="Mini_Statement_02_Verify_Data_Table">Mini_Statement_02_Verify_Data_Table</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-BankGuru -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BankGuru" class="hide-methods passed suite-BankGuru"> (hide)</a> <!-- hide-methods passed suite-BankGuru -->
+                      <a href="#" panel-name="suite-BankGuru" class="show-methods passed suite-BankGuru"> (show)</a> <!-- show-methods passed suite-BankGuru -->
+                    </span>
+                    <div class="method-list-content passed suite-BankGuru">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.account.Account_02_Edit_Account" hash-for-method="Edit_Account_01_Verify_Account_Number">Edit_Account_01_Verify_Account_Number</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_02_Edit_Customer" hash-for-method="Edit_Customer_01_Verify_CustomerID">Edit_Customer_01_Verify_CustomerID</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_02_Edit_Customer" hash-for-method="Edit_Customer_02_Verify_Address_Field">Edit_Customer_02_Verify_Address_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_02_Edit_Customer" hash-for-method="Edit_Customer_03_Verify_City_Field">Edit_Customer_03_Verify_City_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_02_Edit_Customer" hash-for-method="Edit_Customer_04_Verify_State_Field">Edit_Customer_04_Verify_State_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_02_Edit_Customer" hash-for-method="Edit_Customer_05_Verify_PIN_Field">Edit_Customer_05_Verify_PIN_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_02_Edit_Customer" hash-for-method="Edit_Customer_06_Verify_Telephone_Field">Edit_Customer_06_Verify_Telephone_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_02_Edit_Customer" hash-for-method="Edit_Customer_07_Verify_Email_Field">Edit_Customer_07_Verify_Email_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_02_Edit_Customer" hash-for-method="Edit_Customer_08_Edit_With_Valid_Value">Edit_Customer_08_Edit_With_Valid_Value</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.account.Account_01_New_Account" hash-for-method="New_Account_01_Verify_Customer_ID">New_Account_01_Verify_Customer_ID</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.account.Account_01_New_Account" hash-for-method="New_Account_02_Verify_Intial_Deposit">New_Account_02_Verify_Intial_Deposit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.account.Account_01_New_Account" hash-for-method="New_Account_03_New_Account_With_Valid_Data">New_Account_03_New_Account_With_Valid_Data</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_01_Verify_Name_Field">New_Customer_01_Verify_Name_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_02_Verify_Address_Field">New_Customer_02_Verify_Address_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_03_Verify_City_Field">New_Customer_03_Verify_City_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_04_Verify_State_Field">New_Customer_04_Verify_State_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_05_Verify_PIN_Field">New_Customer_05_Verify_PIN_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_06_Verify_Telephone_Field">New_Customer_06_Verify_Telephone_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_07_Verify_Email_Field">New_Customer_07_Verify_Email_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_08_Verify_All_Field_Requirement">New_Customer_08_Verify_All_Field_Requirement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BankGuru" title="com.bankguru.customer.Customer_01_New_Customer" hash-for-method="New_Customer_09_New_Customer_With_Valid_Data">New_Customer_09_New_Customer_With_Valid_Data</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-BankGuru -->
+                    </div> <!-- method-list-content passed suite-BankGuru -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -222,25 +250,70 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-BankGuru" class="panel BankGuru">
-          <div class="suite-BankGuru-class-skipped">
+          <div class="suite-BankGuru-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.bankguru.customer.Customer_02_Edit_Customer</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.bankguru.account.Account_02_Edit_Account</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Edit_Customer_01_Verify_CustomerID">
-                  </a> <!-- Edit_Customer_01_Verify_CustomerID -->
-                  <span class="method-name">Edit_Customer_01_Verify_CustomerID</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+                  <a name="Edit_Account_02_Verify_Balance">
+                  </a> <!-- Edit_Account_02_Verify_Balance -->
+                  <span class="method-name">Edit_Account_02_Verify_Balance</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class=&apos;heading3&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementVisible(BasePage.java:456)
+	at commons.BasePage.getHeadingMessage(BasePage.java:814)
+	at com.bankguru.account.Account_02_Edit_Account.Edit_Account_02_Verify_Balance(Account_02_Edit_Account.java:97)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&apos;heading3&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63692}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09e66602e686b583ab9cdcf1b063fd6f
+*** Element info: {Using=xpath, value=//p[@class=&apos;heading3&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankGuru-class-failed -->
+          <div class="suite-BankGuru-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.bankguru.account.Account_04_Mini_Statement</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Mini_Statement_01_Verify_Account_No">
+                  </a> <!-- Mini_Statement_01_Verify_Account_No -->
+                  <span class="method-name">Mini_Statement_01_Verify_Account_No</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
   (Session info: chrome=89.0.4389.114)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 67109ae3067cb277bf4575f3fee57290
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -249,24 +322,23 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
 	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
+	at com.bankguru.account.Account_04_Mini_Statement.beforeClass(Account_04_Mini_Statement.java:24)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Edit_Customer_02_Verify_Address_Field">
-                  </a> <!-- Edit_Customer_02_Verify_Address_Field -->
-                  <span class="method-name">Edit_Customer_02_Verify_Address_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+                  <a name="Mini_Statement_02_Verify_Data_Table">
+                  </a> <!-- Mini_Statement_02_Verify_Data_Table -->
+                  <span class="method-name">Mini_Statement_02_Verify_Data_Table</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
   (Session info: chrome=89.0.4389.114)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 67109ae3067cb277bf4575f3fee57290
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -275,172 +347,16 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
 	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Edit_Customer_03_Verify_City_Field">
-                  </a> <!-- Edit_Customer_03_Verify_City_Field -->
-                  <span class="method-name">Edit_Customer_03_Verify_City_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Edit_Customer_04_Verify_State_Field">
-                  </a> <!-- Edit_Customer_04_Verify_State_Field -->
-                  <span class="method-name">Edit_Customer_04_Verify_State_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Edit_Customer_05_Verify_PIN_Field">
-                  </a> <!-- Edit_Customer_05_Verify_PIN_Field -->
-                  <span class="method-name">Edit_Customer_05_Verify_PIN_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Edit_Customer_06_Verify_Telephone_Field">
-                  </a> <!-- Edit_Customer_06_Verify_Telephone_Field -->
-                  <span class="method-name">Edit_Customer_06_Verify_Telephone_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Edit_Customer_07_Verify_Email_Field">
-                  </a> <!-- Edit_Customer_07_Verify_Email_Field -->
-                  <span class="method-name">Edit_Customer_07_Verify_Email_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Edit_Customer_08_Edit_With_Valid_Value">
-                  </a> <!-- Edit_Customer_08_Edit_With_Valid_Value -->
-                  <span class="method-name">Edit_Customer_08_Edit_With_Valid_Value</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
+	at com.bankguru.account.Account_04_Mini_Statement.beforeClass(Account_04_Mini_Statement.java:24)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-BankGuru-class-skipped -->
-          <div class="suite-BankGuru-class-skipped">
+          <div class="suite-BankGuru-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.bankguru.account.Account_01_New_Account</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -449,25 +365,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Account_01_Verify_Customer_ID">
                   </a> <!-- New_Account_01_Verify_Customer_ID -->
                   <span class="method-name">New_Account_01_Verify_Customer_ID</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -475,25 +372,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Account_02_Verify_Intial_Deposit">
                   </a> <!-- New_Account_02_Verify_Intial_Deposit -->
                   <span class="method-name">New_Account_02_Verify_Intial_Deposit</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -501,32 +379,28 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Account_03_New_Account_With_Valid_Data">
                   </a> <!-- New_Account_03_New_Account_With_Valid_Data -->
                   <span class="method-name">New_Account_03_New_Account_With_Valid_Data</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BankGuru-class-skipped -->
-          <div class="suite-BankGuru-class-skipped">
+          </div> <!-- suite-BankGuru-class-passed -->
+          <div class="suite-BankGuru-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">com.bankguru.account.Account_02_Edit_Account</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Account_01_Verify_Account_Number">
+                  </a> <!-- Edit_Account_01_Verify_Account_Number -->
+                  <span class="method-name">Edit_Account_01_Verify_Account_Number</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankGuru-class-passed -->
+          <div class="suite-BankGuru-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.bankguru.customer.Customer_01_New_Customer</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -535,25 +409,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_01_Verify_Name_Field">
                   </a> <!-- New_Customer_01_Verify_Name_Field -->
                   <span class="method-name">New_Customer_01_Verify_Name_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -561,25 +416,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_02_Verify_Address_Field">
                   </a> <!-- New_Customer_02_Verify_Address_Field -->
                   <span class="method-name">New_Customer_02_Verify_Address_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -587,25 +423,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_03_Verify_City_Field">
                   </a> <!-- New_Customer_03_Verify_City_Field -->
                   <span class="method-name">New_Customer_03_Verify_City_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -613,25 +430,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_04_Verify_State_Field">
                   </a> <!-- New_Customer_04_Verify_State_Field -->
                   <span class="method-name">New_Customer_04_Verify_State_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -639,25 +437,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_05_Verify_PIN_Field">
                   </a> <!-- New_Customer_05_Verify_PIN_Field -->
                   <span class="method-name">New_Customer_05_Verify_PIN_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -665,25 +444,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_06_Verify_Telephone_Field">
                   </a> <!-- New_Customer_06_Verify_Telephone_Field -->
                   <span class="method-name">New_Customer_06_Verify_Telephone_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -691,25 +451,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_07_Verify_Email_Field">
                   </a> <!-- New_Customer_07_Verify_Email_Field -->
                   <span class="method-name">New_Customer_07_Verify_Email_Field</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -717,25 +458,6 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_08_Verify_All_Field_Requirement">
                   </a> <!-- New_Customer_08_Verify_All_Field_Requirement -->
                   <span class="method-name">New_Customer_08_Verify_All_Field_Requirement</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -743,89 +465,74 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
                   <a name="New_Customer_09_New_Customer_With_Valid_Data">
                   </a> <!-- New_Customer_09_New_Customer_With_Valid_Data -->
                   <span class="method-name">New_Customer_09_New_Customer_With_Valid_Data</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BankGuru-class-skipped -->
-          <div class="suite-BankGuru-class-skipped">
+          </div> <!-- suite-BankGuru-class-passed -->
+          <div class="suite-BankGuru-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.bankguru.customer.Customer_03_Delete_Customer</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.bankguru.customer.Customer_02_Edit_Customer</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Delete_Customer_01_Verify_Customer_ID">
-                  </a> <!-- Delete_Customer_01_Verify_Customer_ID -->
-                  <span class="method-name">Delete_Customer_01_Verify_Customer_ID</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="Edit_Customer_01_Verify_CustomerID">
+                  </a> <!-- Edit_Customer_01_Verify_CustomerID -->
+                  <span class="method-name">Edit_Customer_01_Verify_CustomerID</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Delete_Customer_02_Delete_Customer_With_Valid_Value">
-                  </a> <!-- Delete_Customer_02_Delete_Customer_With_Valid_Value -->
-                  <span class="method-name">Delete_Customer_02_Delete_Customer_With_Valid_Value</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=89.0.4389.114)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TK-AM&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd9dfa22abe41f504253353ff8222ee1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at commons.BaseTest.getBrowserDriver(BaseTest.java:45)
-	at com.bankguru.common.Common_01_Register.beforeTest(Common_01_Register.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="Edit_Customer_02_Verify_Address_Field">
+                  </a> <!-- Edit_Customer_02_Verify_Address_Field -->
+                  <span class="method-name">Edit_Customer_02_Verify_Address_Field</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Customer_03_Verify_City_Field">
+                  </a> <!-- Edit_Customer_03_Verify_City_Field -->
+                  <span class="method-name">Edit_Customer_03_Verify_City_Field</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Customer_04_Verify_State_Field">
+                  </a> <!-- Edit_Customer_04_Verify_State_Field -->
+                  <span class="method-name">Edit_Customer_04_Verify_State_Field</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Customer_05_Verify_PIN_Field">
+                  </a> <!-- Edit_Customer_05_Verify_PIN_Field -->
+                  <span class="method-name">Edit_Customer_05_Verify_PIN_Field</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Customer_06_Verify_Telephone_Field">
+                  </a> <!-- Edit_Customer_06_Verify_Telephone_Field -->
+                  <span class="method-name">Edit_Customer_06_Verify_Telephone_Field</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Customer_07_Verify_Email_Field">
+                  </a> <!-- Edit_Customer_07_Verify_Email_Field -->
+                  <span class="method-name">Edit_Customer_07_Verify_Email_Field</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Customer_08_Edit_With_Valid_Value">
+                  </a> <!-- Edit_Customer_08_Edit_With_Valid_Value -->
+                  <span class="method-name">Edit_Customer_08_Edit_With_Valid_Value</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BankGuru-class-skipped -->
+          </div> <!-- suite-BankGuru-class-passed -->
         </div> <!-- panel BankGuru -->
         <div panel-name="test-xml-BankGuru" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -850,8 +557,9 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
       &lt;class name=&quot;com.bankguru.common.Common_01_Register&quot;/&gt;
       &lt;class name=&quot;com.bankguru.customer.Customer_01_New_Customer&quot;/&gt;
       &lt;class name=&quot;com.bankguru.customer.Customer_02_Edit_Customer&quot;/&gt;
-      &lt;class name=&quot;com.bankguru.customer.Customer_03_Delete_Customer&quot;/&gt;
       &lt;class name=&quot;com.bankguru.account.Account_01_New_Account&quot;/&gt;
+      &lt;class name=&quot;com.bankguru.account.Account_02_Edit_Account&quot;/&gt;
+      &lt;class name=&quot;com.bankguru.account.Account_04_Mini_Statement&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
 &lt;/suite&gt; &lt;!-- BankGuru --&gt;
@@ -865,7 +573,7 @@ Session ID: dd9dfa22abe41f504253353ff8222ee1
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run on Chrome (5 classes)</span>
+                <span class="test-name">Run on Chrome (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -891,100 +599,108 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(22);
+data.addRows(24);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'New_Customer_09_New_Customer_With_Valid_Data')
-data.setCell(0, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'Edit_Account_02_Verify_Balance')
+data.setCell(0, 2, 'com.bankguru.account.Account_02_Edit_Account')
+data.setCell(0, 3, 86553);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Edit_Customer_05_Verify_PIN_Field')
-data.setCell(1, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'New_Customer_08_Verify_All_Field_Requirement')
+data.setCell(1, 2, 'com.bankguru.customer.Customer_01_New_Customer')
+data.setCell(1, 3, 5214);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'New_Account_03_New_Account_With_Valid_Data')
-data.setCell(2, 2, 'com.bankguru.account.Account_01_New_Account')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'New_Customer_09_New_Customer_With_Valid_Data')
+data.setCell(2, 2, 'com.bankguru.customer.Customer_01_New_Customer')
+data.setCell(2, 3, 4120);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'New_Customer_06_Verify_Telephone_Field')
-data.setCell(3, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'New_Account_03_New_Account_With_Valid_Data')
+data.setCell(3, 2, 'com.bankguru.account.Account_01_New_Account')
+data.setCell(3, 3, 3990);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'New_Customer_01_Verify_Name_Field')
-data.setCell(4, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'Edit_Customer_08_Edit_With_Valid_Value')
+data.setCell(4, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
+data.setCell(4, 3, 3516);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'New_Customer_07_Verify_Email_Field')
-data.setCell(5, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'Edit_Account_01_Verify_Account_Number')
+data.setCell(5, 2, 'com.bankguru.account.Account_02_Edit_Account')
+data.setCell(5, 3, 2570);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Edit_Customer_03_Verify_City_Field')
-data.setCell(6, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'New_Account_01_Verify_Customer_ID')
+data.setCell(6, 2, 'com.bankguru.account.Account_01_New_Account')
+data.setCell(6, 3, 2211);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'New_Account_02_Verify_Intial_Deposit')
-data.setCell(7, 2, 'com.bankguru.account.Account_01_New_Account')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'Edit_Customer_02_Verify_Address_Field')
+data.setCell(7, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
+data.setCell(7, 3, 2174);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Delete_Customer_01_Verify_Customer_ID')
-data.setCell(8, 2, 'com.bankguru.customer.Customer_03_Delete_Customer')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'Edit_Customer_01_Verify_CustomerID')
+data.setCell(8, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
+data.setCell(8, 3, 1955);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'New_Customer_08_Verify_All_Field_Requirement')
+data.setCell(9, 1, 'New_Customer_01_Verify_Name_Field')
 data.setCell(9, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(9, 3, 0);
+data.setCell(9, 3, 1953);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Edit_Customer_02_Verify_Address_Field')
-data.setCell(10, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'New_Customer_05_Verify_PIN_Field')
+data.setCell(10, 2, 'com.bankguru.customer.Customer_01_New_Customer')
+data.setCell(10, 3, 1597);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Edit_Customer_04_Verify_State_Field')
-data.setCell(11, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'New_Account_02_Verify_Intial_Deposit')
+data.setCell(11, 2, 'com.bankguru.account.Account_01_New_Account')
+data.setCell(11, 3, 1433);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'Edit_Customer_07_Verify_Email_Field')
-data.setCell(12, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
-data.setCell(12, 3, 0);
+data.setCell(12, 1, 'New_Customer_07_Verify_Email_Field')
+data.setCell(12, 2, 'com.bankguru.customer.Customer_01_New_Customer')
+data.setCell(12, 3, 1421);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'Edit_Customer_08_Edit_With_Valid_Value')
-data.setCell(13, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'New_Customer_03_Verify_City_Field')
+data.setCell(13, 2, 'com.bankguru.customer.Customer_01_New_Customer')
+data.setCell(13, 3, 1266);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'New_Customer_04_Verify_State_Field')
+data.setCell(14, 1, 'New_Customer_06_Verify_Telephone_Field')
 data.setCell(14, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(14, 3, 0);
+data.setCell(14, 3, 1261);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'Edit_Customer_01_Verify_CustomerID')
-data.setCell(15, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
-data.setCell(15, 3, 0);
+data.setCell(15, 1, 'New_Customer_04_Verify_State_Field')
+data.setCell(15, 2, 'com.bankguru.customer.Customer_01_New_Customer')
+data.setCell(15, 3, 1244);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'Delete_Customer_02_Delete_Customer_With_Valid_Value')
-data.setCell(16, 2, 'com.bankguru.customer.Customer_03_Delete_Customer')
-data.setCell(16, 3, 0);
+data.setCell(16, 1, 'Edit_Customer_07_Verify_Email_Field')
+data.setCell(16, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
+data.setCell(16, 3, 1108);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'New_Account_01_Verify_Customer_ID')
-data.setCell(17, 2, 'com.bankguru.account.Account_01_New_Account')
-data.setCell(17, 3, 0);
+data.setCell(17, 1, 'Edit_Customer_03_Verify_City_Field')
+data.setCell(17, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
+data.setCell(17, 3, 1086);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'Edit_Customer_06_Verify_Telephone_Field')
+data.setCell(18, 1, 'Edit_Customer_05_Verify_PIN_Field')
 data.setCell(18, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
-data.setCell(18, 3, 0);
+data.setCell(18, 3, 1079);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'New_Customer_05_Verify_PIN_Field')
-data.setCell(19, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(19, 3, 0);
+data.setCell(19, 1, 'Edit_Customer_04_Verify_State_Field')
+data.setCell(19, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
+data.setCell(19, 3, 1070);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'New_Customer_02_Verify_Address_Field')
-data.setCell(20, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(20, 3, 0);
+data.setCell(20, 1, 'Edit_Customer_06_Verify_Telephone_Field')
+data.setCell(20, 2, 'com.bankguru.customer.Customer_02_Edit_Customer')
+data.setCell(20, 3, 719);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'New_Customer_03_Verify_City_Field')
+data.setCell(21, 1, 'New_Customer_02_Verify_Address_Field')
 data.setCell(21, 2, 'com.bankguru.customer.Customer_01_New_Customer')
-data.setCell(21, 3, 0);
+data.setCell(21, 3, 503);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Mini_Statement_02_Verify_Data_Table')
+data.setCell(22, 2, 'com.bankguru.account.Account_04_Mini_Statement')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Mini_Statement_01_Verify_Account_No')
+data.setCell(23, 2, 'com.bankguru.account.Account_04_Mini_Statement')
+data.setCell(23, 3, 0);
 window.suiteTableData['BankGuru']= { tableData: data, tableDiv: 'times-div-BankGuru'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-BankGuru">
               </div> <!-- times-div-BankGuru -->
             </div> <!-- times-div -->
@@ -995,6 +711,950 @@ return data;
             <span class="header-content">Reporter output for BankGuru</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Account_03_New_Account_With_Valid_Data</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:37,373] New Account - Step 01: Click to Reset button in Add New Account form
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:38,458] New Account - Step 02: Enter Customer ID textbox with value 41340
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:38,606] New Account - Step 03: Select Account Type dropbox with value Savings
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:38,689] New Account - Step 04: Enter Initial Deposit textbox with value 50000
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:38,818] New Account - Step 05: Click to Submit button in Add New Account form
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:40,972] New Account - Step 06: Verify Account Registered Successfully Message
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,050]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,050] New Account - Step 07: Verify Customer ID with value 41340
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,112]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,112] New Account - Step 08: Verify Customer Name with value tuan
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,170]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,170] New Account - Step 09: Verify Customer Email with value test23860@gmail.com
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,217]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,217] New Account - Step 10: Verify Account Type with value Savings
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,265]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,265] New Account - Step 11: Verify Current Amount with value 50000
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:41,313]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Customer_08_Edit_With_Valid_Value</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,520] Edit Customer - Step 04: Enter Edit Customer Address with value cmt
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,661] Edit Customer - Step 05: Enter Edit Customer City with value hanoi
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,789] Edit Customer - Step 06: Enter Edit Customer State with value alo
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,931] Edit Customer - Step 07: Enter Edit Customer PIN with value 222333
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:22,067] Edit Customer - Step 08: Enter Edit Customer PIN with value 333222444
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:22,208] Edit Customer - Step 09: Enter Edit Customer PIN with value test23860@gmail.com
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:22,357] Edit Customer - Step 10: Click to Submit in Edit Customer
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,399] Edit Customer - Step 11: Verify Customer Edited Successfully Message
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,476]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,476] Edit Customer - Step 12: Verify Customer ID with value 41340
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,541]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,541] Edit Customer - Step 13: Verify Customer Name with value tuan
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,600]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,600] Edit Customer - Step 14: Verify Customer Gender with value Female
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,662]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,662] Edit Customer - Step 15: Verify Customer Birthdate with value 1993-10-01
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,726]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,726] Edit Customer - Step 16: Verify Customer Address with value cmt
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,787]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,787] Edit Customer - Step 17: Verify Customer State with value alo
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,851]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,851] Edit Customer - Step 18: Verify Customer Pin with value 222333
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,911]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,911] Edit Customer - Step 19: Verify Customer Mobile No with value 333222444
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,974]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:24,974] Edit Customer - Step 20: Verify Customer Email with value test23860@gmail.com
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:25,035]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_02_Verify_Address_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,269] Verify Address - Step 01: Click Customer Address Textarea
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,385] Verify Address - Step 02: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,553] Verify Address - Step 03: Verify an error message 'Address Field must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,601]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,601] Verify Address - Step 04: Enter Customer Adress in Textarea with 'First charater blank space' 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,723] Verify Address - Step 05: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,770]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_08_Verify_All_Field_Requirement</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,570] Verify All - Step 01: Click Resert button
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:56,654] Verify All - Step 02: Click Customer Name textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:56,740] Verify All - Step 03: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:56,937] Verify All - Step 04: Verify an error message 'Customer name must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:56,992]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:56,992] Verify All - Step 05: Click Customer Date of Birth textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,065] Verify All - Step 06: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,282] Verify All - Step 07: Verify an error message 'Date Field must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,331]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,331] Verify All - Step 08: Click Customer Address Textarea
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,437] Verify All - Step 09: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,602] Verify All - Step 10: Verify an error message 'Address Field must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,654]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,654] Verify All - Step 11: Click Customer City textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,729] Verify All - Step 12: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:57,957] Verify All - Step 13: Verify an error message 'Customer City must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,010]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,010] Verify All - Step 14: Click Customer State textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,085] Verify All - Step 15: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,289] Verify All - Step 16: Verify an error message 'State must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,339]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,339] Verify All - Step 17: Click Customer PIN textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,409] Verify All - Step 18: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,613] Verify All - Step 19: Verify an error message 'PIN Code must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,661]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,661] Verify All - Step 20: Click Customer Phone textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,729] Verify All - Step 21: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:58,952] Verify All - Step 22: Verify an error message 'Mobile no must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,001]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,001] Verify All - Step 23: Click Customer Email textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,067] Verify All - Step 24: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,277] Verify All - Step 25: Verify an error message 'Email-ID must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,327]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,327] Verify All - Step 26: Click Customer Password textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,401] Verify All - Step 27: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,614] Verify All - Step 28: Verify an error message 'Password must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,668]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:59,668] Verify All - Step 29: Click Submit button
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:00,765] Verify All - Step 30: Verify Alert text 'please fill all fields' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:00,774]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:00,774] Verify All - Step 31: Click OK button in Alert
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_07_Verify_Email_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,147] Verify Email - Step 01: Click Customer Email textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,221] Verify Email - Step 02: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,424] Verify Email - Step 03: Verify an error message 'Email-ID must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,470]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,470] Verify Email - Step 04: Enter Customer Email in Textbox with value: guru99@gmail.
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,597] Verify Email - Step 05: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,654]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,654] Verify Email - Step 06: Enter Customer Email in Textbox with value: guru99
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,791] Verify Email - Step 07: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,834]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,834] Verify Email - Step 08: Enter Customer Email in Textbox with value: guru99@
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,971] Verify Email - Step 09: Verify an error message 'Email-ID is not valid' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,021]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,021] Verify Email - Step 10: Enter Customer Email in Textbox with value: guru99@gmail.
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,165] Verify Email - Step 11: Verify an error message 'Email-ID is not valid' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,210]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,210] Verify Email - Step 12: Enter Customer Email in Textbox with value: 'test222gmail.com'guru99gmail.com
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,334] Verify Email - Step 13: Verify an error message 'Email-ID is not valid' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,380]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,380] Verify Email - Step 14: Enter Customer Email in Textbox with 'First charater blank space'  
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,516] Verify Email - Step 15: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:55,567]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_09_New_Customer_With_Valid_Data</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:00,787] New Customer - Step 01: Open New Customer Page
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:00,898] New Customer - Step 02: Enter Customer Name in Textbox with value: tuan
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:01,043] New Customer - Step 03: Select Female Gender
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:01,149] New Customer - Step 04: Enter Data of Birth with value: 10/01/1993
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:01,309] New Customer - Step 05:  Enter Customer Address in Textbox with value: 172 tay ninh
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:01,429] New Customer - Step 06:  Enter Customer City in Textbox with value: tay ninh
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:01,567] New Customer - Step 07:  Enter Customer State in Textbox with value: abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:01,704] New Customer - Step 08:  Enter Customer PIN in Textbox with value: 123456
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:01,844] New Customer - Step 09: Enter Customer Mobile Phone in Textbox with value: 0399992426
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:01,982] New Customer - Step 10: Enter Customer Email in Textbox with value: test55982@gmail.com
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:02,128] New Customer - Step 11: Enter Customer Password in Textbox with value: 123123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:02,273] New Customer - Step 12: Click button Submit
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,334] New Customer - Step 13: Verify Customer Registered Successfully Message
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,408]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,409] New Customer - Step 14: Verify Customer Name with value tuan
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,457]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,457] New Customer - Step 15: Verify Customer Gender with value Female
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,518]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,518] New Customer - Step 16: Verify Customer Birthdate with value 1993-10-01
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,564]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,564] New Customer - Step 17: Verify Customer Address with value 172 tay ninh
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,612]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,612] New Customer - Step 18: Verify Customer State with value abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,675]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,675] New Customer - Step 19: Verify Customer Pin with value 123456
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,735]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,735] New Customer - Step 20: Verify Customer Mobile No with value 0399992426
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,782]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,782] New Customer - Step 21: Verify Customer Email with value test55982@gmail.com
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:04,847]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Customer_07_Verify_Email_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,407] Verify Email - Step 01: Click to Email textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,496] Verify Email - Step 02: Press Tab key in Email textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,729] Verify Email - Step 03: Verify an error message 'Email-ID must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,774]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,774] Verify Email - Step 04: Enter Email textbox with value guru99@gmail
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,903] Verify Email - Step 05: Verify an error message 'Email-ID is not valid' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,959]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,959] Verify Email - Step 04: Enter Email textbox with value guru99
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,094] Verify Email - Step 05: Verify an error message 'Email-ID is not valid' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,141]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,142] Verify Email - Step 06: Enter Email textbox with value guru99@
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,279] Verify Email - Step 07: Verify an error message 'Email-ID is not valid' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,327]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,327] Verify Email - Step 08: Enter Email textbox with value guru99gmail.com
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,469] Verify Email - Step 09: Verify an error message 'Email-ID is not valid' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:21,514]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Account_01_Verify_Customer_ID</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:33,727] Verify Customer ID In New Account - Step 01: Click New Account in Navigation Menu Bar
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:34,403] Verify Customer ID In New Account - Step 02: Click to Customer ID textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:34,484] Verify Customer ID In New Account - Step 03: Press Tab key in Customer ID textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:34,680] Verify Customer ID In New Account - Step 04: Verify an error message 'Customer ID is required' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:34,732]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:34,732] Verify Customer ID In New Account - Step 05: Enter Customer ID textbox with value 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:34,856] Verify Customer ID In New Account - Step 06: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:34,900]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:34,900] Verify Customer ID In New Account - Step 07: Enter Customer ID textbox with value abc123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,022] Verify Customer ID In New Account - Step 08: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,074]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,074] Verify Customer ID In New Account - Step 09: Enter Customer ID textbox with value 123!@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,198] Verify Customer ID In New Account - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,246]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,246] Verify Customer ID In New Account - Step 11: Enter Customer ID textbox with value !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,367] Verify Customer ID In New Account - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,420]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,420] Verify Customer ID In New Account - Step 13: Enter Customer ID textbox with value abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,542] Verify Customer ID In New Account - Step 14: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,594]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,594] Verify Customer ID In New Account - Step 14: Enter Customer ID textbox with value 123 12
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,715] Verify Customer ID In New Account - Step 15: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,767]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,768] Verify Customer ID In New Account - Step 16: Enter Customer ID textbox with First character have space  
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,885] Verify Customer ID In New Account - Step 17: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,936]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Account_02_Verify_Intial_Deposit</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:35,939] Verify Intial Deposit In New Account - Step 01: Click to Intial Deposit textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,031] Verify Intial Deposit In New Account - Step 02: Press Tab key in Intial Deposit textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,243] Verify Intial Deposit In New Account - Step 03: Verify an error message 'Initial Deposit must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,295]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,295] Verify Intial Deposit In New Account - Step 04: Enter Intial Deposit textbox with value '123ABC'123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,418] Verify Intial Deposit In New Account - Step 05: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,465]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,465] Verify Intial Deposit In New Account - Step 06: Enter Intial Deposit textbox with value abc123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,600] Verify Intial Deposit In New Account - Step 07: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,653]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,654] Verify Intial Deposit In New Account - Step 08: Enter Intial Deposit textbox with value 123!@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,788] Verify Intial Deposit In New Account - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,840]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,840] Verify Intial Deposit In New Account - Step 10: Enter Intial Deposit textbox with value !@#123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:36,978] Verify Intial Deposit In New Account - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:37,020]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:37,020] Verify Intial Deposit In New Account - Step 12: Enter Intial Deposit textbox with value 123 12
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:37,144] Verify Intial Deposit In New Account - Step 13: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:37,199]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:37,199] Verify Intial Deposit In New Account - Step 14: Enter Intial Deposit textbox with First character have space  
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:37,316] Verify Intial Deposit In New Account - Step 15: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:37,370]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Customer_02_Verify_Address_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:14,272] Verify Address - Step 01: Enter Customer ID with value: 41340
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:14,412] Verify Address - Step 02: Click to Submit in Edit Customer Form
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,093] Verify Address - Step 03: Click to Address Textarea
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,228] Verify Address - Step 04: Press Tab key in Address Textarea
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,400] Verify Address - Step 05: Verify an error message 'Address Field must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,445]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Customer_01_Verify_CustomerID</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:12,317] Verify CustomerID - Step 01: Click to Edit Customer in Navigate Menu bar
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,003] Verify CustomerID - Step 02: Click to Customer ID textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,080] Verify CustomerID - Step 03: Press Tab key in Customer ID textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,314] Verify CustomerID - Step 04: Verify an error message 'Customer ID is required' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,362]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,362] Verify CustomerID - Step 05: Enter Customer ID textbox with value 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,499] Verify CustomerID - Step 06: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,544]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,544] Verify CustomerID - Step 07: Enter Customer ID textbox with value abc123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,683] Verify CustomerID - Step 08: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,732]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,733] Verify CustomerID - Step 09: Enter Customer ID textbox with value !@#123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,850] Verify CustomerID - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,903]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:13,903] Verify CustomerID - Step 11: Enter Customer ID textbox with value !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:14,033] Verify CustomerID - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:14,086]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:14,086] Verify CustomerID - Step 13: Enter Customer ID textbox with value abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:14,219] Verify CustomerID - Step 14: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:14,270]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_04_Verify_State_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,041] Verify State - Step 01: Click Customer State textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,119] Verify State - Step 02: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,333] Verify State - Step 03: Verify an error message 'State must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,383]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,383] Verify State - Step 04: Enter Customer State in Textbox with value: 1234
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,515] Verify State - Step 05: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,567]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,567] Verify State - Step 06: Enter Customer State in Textbox with value: 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,683] Verify State - Step 07: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,736]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,736] Verify State - Step 08: Enter Customer State in Textbox with value: !@#abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,871] Verify State - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,923]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,923] Verify State - Step 10: Enter Customer State in Textbox with value: !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,061] Verify State - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,111]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,111] Verify State - Step 12: Enter Customer State in Textbox with 'First charater blank space'  
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,228] Verify State - Step 13: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,283]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Customer_04_Verify_State_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,535] Verify State - Step 01: Click to State textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,611] Verify State - Step 02: Press Tab key in State textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,826] Verify State - Step 03: Verify an error message 'State must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,878]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,878] Verify State - Step 05: Enter State textbox with value 1234
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,998] Verify State - Step 06: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,049]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,049] Verify State - Step 07: Enter State textbox with value 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,186] Verify State - Step 08: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,235]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,235] Verify State - Step 09: Enter State textbox with value !@#abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,376] Verify State - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,422]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,422] Verify State - Step 11: Enter City State with value !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,562] Verify State - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,604]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Account_01_Verify_Account_Number</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:50,777] Verify Account Number - Step 01: Click to Edit Account in Navigation Menu Bar
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,092] Verify Account Number - Step 02: Click to Account No textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,166] Verify Account Number - Step 03: Press Tab keyboard
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,373] Verify Account Number - Step 04: Verify Error Message 'Account Number must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,420]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,420] Verify Account Number - Step 05: Enter to Account No textbox with value 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,562] Verify Account Number - Step 06: Verify Error Message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,621]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,621] Verify Account Number - Step 07: Enter to Account No textbox with value !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,758] Verify Account Number - Step 08: Verify Error Message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,804]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,804] Verify Account Number - Step 09: Enter to Account No textbox with value !@#123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,941] Verify Account Number - Step 10: Verify Error Message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,991]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:52,991] Verify Account Number - Step 11: Enter to Account No textbox with value 123 12
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:53,108] Verify Account Number - Step 12: Verify Error Message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:53,162]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:53,162] Verify Account Number - Step 13: Enter to Account No textbox with value  
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:53,297] Verify Account Number - Step 14: Verify Error Message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:53,345]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Customer_03_Verify_City_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,447] Verify City - Step 01: Click to City textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,536] Verify City - Step 02: Press Tab key in City textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,751] Verify City - Step 03: Verify an error message 'City Field must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,802]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,802] Verify City - Step 05: Enter City textbox with value 1234
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,943] Verify City - Step 06: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,988]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:16,989] Verify City - Step 07: Enter City textbox with value 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,110] Verify City - Step 08: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,159]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,159] Verify City - Step 09: Enter City textbox with value !@#abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,299] Verify City - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,349]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,349] Verify City - Step 11: Enter City textbox with value !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,485] Verify City - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:17,532]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Customer_05_Verify_PIN_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,607] Verify PIN - Step 01: Click to PIN textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,683] Verify PIN - Step 02: Press Tab key in PIN textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,915] Verify PIN - Step 03: Verify an error message 'PIN Code must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,963]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:18,963] Verify PIN - Step 05: Enter PIN textbox with value '1234'123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,082] Verify PIN - Step 06: Verify an error message 'PIN Code must have 6 Digits' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,128]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,128] Verify PIN - Step 07: Enter PIN textbox with value 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,268] Verify PIN - Step 08: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,318]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,318] Verify PIN - Step 09: Enter PIN textbox with value !@#abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,453] Verify PIN - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,503]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,503] Verify PIN - Step 11: Enter PIN State with value !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,635] Verify PIN - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,684]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_03_Verify_City_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,774] Verify City - Step 01: Click Customer City textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,864] Verify City - Step 02: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,083] Verify City - Step 03: Verify an error message 'City Field must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,131]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,131] Verify City - Step 04: Enter Customer City in Textbox with value: 1234
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,251] Verify City - Step 05: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,298]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,298] Verify City - Step 06: Enter Customer City in Textbox with value: 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,437] Verify City - Step 07: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,484]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,484] Verify City - Step 08: Enter Customer City in Textbox with value: !@#abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,624] Verify City - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,669]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,669] Verify City - Step 10: Enter Customer City in Textbox with value: !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,804] Verify City - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,855]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,855] Verify City - Step 12: Enter Customer City in Textbox with 'First charater blank space' 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:49,987] Verify City - Step 13: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:50,037]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Customer_06_Verify_Telephone_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,687] Verify Telephone - Step 01: Click to Telephone textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,763] Verify Telephone - Step 02: Press Tab key in Telephone textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:19,997] Verify Telephone - Step 03: Verify an error message 'Mobile no must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,046]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,046] Verify Telephone - Step 04: Enter Telephone textbox with value 123!@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,184] Verify Telephone - Step 05: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,228]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,228] Verify Telephone - Step 06: Enter Telephone State with value !@#123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,349] Verify Telephone - Step 07: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:20,404]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_01_Verify_Name_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:46,276] Verify Name - Step 01: Open New Customer Page
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:46,938] Verify Name - Step 02: Click Customer Name textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,027] Verify Name - Step 03: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,241] Verify Name - Step 04: Verify an error message 'Customer name must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,294]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,294] Verify Name - Step 05: Enter Customer Name in Textbox with value: 1234
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,416] Verify Name - Step 06: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,465]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,465] Verify Name - Step 07: Enter Customer Name in Textbox with value: 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,586] Verify Name - Step 08: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,636]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,636] Verify Name - Step 09: Enter Customer Name in Textbox with value: name!@#!@#abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,776] Verify Name - Step 10: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,821]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,821] Verify Name - Step 11: Enter Customer Name in Textbox with value: !@#!@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:47,954] Verify Name - Step 12: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,007]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,007] Verify Name - Step 13: Enter Customer Name in Textbox with 'First charater blank space'  
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,139] Verify Name - Step 14: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:48,194]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_05_Verify_PIN_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,287] Verify PIN - Step 01: Click Customer PIN textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,362] Verify PIN - Step 02: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,576] Verify PIN - Step 03: Verify an error message 'PIN Code must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,625]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,625] Verify PIN - Step 04: Enter Customer PIN in Textbox with value: 123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,745] Verify PIN - Step 05: Verify an error message 'PIN Code must have 6 Digits' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,795]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,795] Verify PIN - Step 06: Enter Customer PIN in Textbox with value: 123abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,915] Verify PIN - Step 07: Verify an error message 'Numbers are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,967]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:51,967] Verify PIN - Step 08: Enter Customer PIN in Textbox with value: !@#abc
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,102] Verify PIN - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,152]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,152] Verify PIN - Step 10: Enter Customer PIN in Textbox with value: !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,292] Verify PIN - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,341]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,341] Verify PIN - Step 12: Enter Customer PIN in Textbox with 'First charater blank space'  
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,475] Verify PIN - Step 13: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,524]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,524] Verify PIN - Step 14: Enter Customer PIN in Textbox with value: 123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,657] Verify PIN - Step 15: Verify an error message 'PIN Code must have 6 Digits' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,710]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,710] Verify PIN - Step 16: Enter Customer PIN in Textbox with value: 123 12
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,831] Verify PIN - Step 17: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,882]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Customer_06_Verify_Telephone_Field</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,885] Verify Telephone - Step 01: Click Customer Telephone textbox
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:52,958] Verify Telephone - Step 02: Press Tab key
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,180] Verify Telephone - Step 03: Verify an error message 'Mobile no must not be blank' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,227]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,227] Verify Telephone - Step 04: Enter Customer Telephone in Textbox with 'First charater blank space'  
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,360] Verify Telephone - Step 05: Verify an error message 'First character can not have space' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,409]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,409] Verify Telephone - Step 06: Enter Customer Telephone in Textbox with value: 123 12
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,547] Verify Telephone - Step 07: Verify an error message 'Characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,595]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,595] Verify Telephone - Step 08: Enter Customer State in Textbox with value: 123!@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,733] Verify Telephone - Step 09: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,782]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,782] Verify Telephone - Step 10: Enter Customer State in Textbox with value: !@#123
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,919] Verify Telephone - Step 11: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,967]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:53,968] Verify Telephone - Step 12: Enter Customer State in Textbox with value: !@#
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,091] Verify Telephone - Step 13: Verify an error message 'Special characters are not allowed' is displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:12:54,144]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Edit_Account_02_Verify_Balance</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:53,348] Verify Balance - Step 01: Enter Acount No textbox with value: 91527
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:13:53,484] Verify Balance - Step 02: Click to Submit button
+</span>
+                <span class="reporter-method-output">[INFO ] [2021-04-14 15:15:09,822] Verify Balance - Step 03: Verify Edit Account Entry Form is displayed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-BankGuru" class="panel">
@@ -1012,110 +1672,159 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.bankguru.common.Common_01_Register</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeTest(chrome, http://demo.guru99.com/v4/index.php)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bankguru.customer.Customer_01_New_Customer</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome, http://demo.guru99.com/v4/index.php)</span>
+                <span class="method-start">10697 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">New_Customer_01_Verify_Name_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">18039 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Customer_02_Verify_Address_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">20065 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Customer_03_Verify_City_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">20570 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Customer_04_Verify_State_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">21837 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Customer_05_Verify_PIN_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">23083 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Customer_06_Verify_Telephone_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">24681 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Customer_07_Verify_Email_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">25944 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Customer_08_Verify_All_Field_Requirement</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">27366 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Customer_09_New_Customer_With_Valid_Data</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">32582 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">36703 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bankguru.customer.Customer_02_Edit_Customer</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome, http://demo.guru99.com/v4/index.php)</span>
+                <span class="method-start">37404 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Edit_Customer_01_Verify_CustomerID</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">44113 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Edit_Customer_02_Verify_Address_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">46069 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Edit_Customer_03_Verify_City_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">48244 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Edit_Customer_04_Verify_State_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">49332 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Edit_Customer_05_Verify_PIN_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">50403 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Edit_Customer_06_Verify_Telephone_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">51483 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Edit_Customer_07_Verify_Email_Field</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">52204 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Edit_Customer_08_Edit_With_Valid_Value</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">53317 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.bankguru.customer.Customer_03_Delete_Customer</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Delete_Customer_01_Verify_Customer_ID</span>
-                <span class="method-start">-1618249563009 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Delete_Customer_02_Delete_Customer_With_Valid_Value</span>
-                <span class="method-start">-1618249563009 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">56834 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bankguru.account.Account_01_New_Account</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome, http://demo.guru99.com/v4/index.php)</span>
+                <span class="method-start">57537 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">New_Account_01_Verify_Customer_ID</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">65523 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Account_02_Verify_Intial_Deposit</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">67735 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">New_Account_03_New_Account_With_Valid_Data</span>
-                <span class="method-start">-1618249563009 ms</span>
+                <span class="method-start">69170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">73161 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bankguru.account.Account_02_Edit_Account</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome, http://demo.guru99.com/v4/index.php)</span>
+                <span class="method-start">73850 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Edit_Account_01_Verify_Account_Number</span>
+                <span class="method-start">82574 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Edit_Account_02_Verify_Balance</span>
+                <span class="method-start">85145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">171967 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bankguru.account.Account_04_Mini_Statement</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass(chrome, http://demo.guru99.com/v4/index.php)</span>
+                <span class="method-start">172665 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Mini_Statement_01_Verify_Account_No</span>
+                <span class="method-start">-1618387948202 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Mini_Statement_02_Verify_Data_Table</span>
+                <span class="method-start">-1618387948202 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

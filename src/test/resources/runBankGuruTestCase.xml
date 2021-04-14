@@ -15,16 +15,17 @@
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.bankguru.common.Common_01_Register" />
+			<!-- <class name="com.bankguru.common.Common_01_Register" /> -->
 			<class name="com.bankguru.customer.Customer_01_New_Customer" />
 			<class name="com.bankguru.customer.Customer_02_Edit_Customer" />
 
 			<class name="com.bankguru.account.Account_01_New_Account" />
 			<class name="com.bankguru.account.Account_02_Edit_Account" />
-			<class name="com.bankguru.account.Account_03_Delete_Account" />
 
+			<class name="com.bankguru.account.Account_04_Mini_Statement" />
+			<class name="com.bankguru.account.Account_03_Delete_Account" />
 			<class name="com.bankguru.customer.Customer_03_Delete_Customer" />
-			<class name="com.bankguru.user.User_01_Change_Password" />
+			<!-- <class name="com.bankguru.user.User_01_Change_Password" /> -->
 		</classes>
 	</test>
 </suite> 

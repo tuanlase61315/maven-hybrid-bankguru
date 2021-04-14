@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
+import org.apache.commons.logging.Log;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,9 +26,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.PageGeneratorManager;
 import pageUIs.BasePageUI;
-import pageUIs.CustomerPageUI;
-
-import org.apache.commons.logging.Log;
 
 public class BasePage {
 	private WebDriver driver;
@@ -263,12 +261,17 @@ public class BasePage {
 		return getElement(driver, locator).getText();
 	}
 
-	public String getTextElement(WebDriver driver, String locator, String... values) {
+	
+	public String getElementText(WebDriver driver, String locator, String... values) {
 		return getElement(driver, getDynamicLocator(locator, values)).getText();
 	}
 
 	public int getElementSize(WebDriver driver, String locator) {
 		return getElements(driver, locator).size();
+	}
+	
+	public int getElementSize(WebDriver driver, String locator, String... values) {
+		return getElements(driver, getDynamicLocator(locator, values)).size();
 	}
 
 	public boolean isElementSelected(WebDriver driver, String locator) {
@@ -788,10 +791,11 @@ public class BasePage {
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textboxName);
 		sendKeyboardToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, Keys.TAB, textboxName);
 	}
-
+	
 	public void clickToButtonByValue(WebDriver driver, String buttonValue) {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_VAULE, buttonValue);
 		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_VAULE, buttonValue);
+		sleepInSecond(1);
 	}
 
 	public void clickToRadioButtonByValue(WebDriver driver, String raidoValue) {
@@ -803,12 +807,19 @@ public class BasePage {
 
 	public String getItemErrorMessageByTextboxName(WebDriver driver, String textboxName) {
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
-		return getTextElement(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
+		return getElementText(driver, BasePageUI.DYNAMIC_CUSTOMER_ERROR_MESSAGE, textboxName);
 	}
 
 	public String getHeadingMessage(WebDriver driver) {
 		waitForElementVisible(driver, BasePageUI.HEADING_MESSAGE);
 		return getTextElement(driver, BasePageUI.HEADING_MESSAGE);
 	}
+	
+	public boolean isInformationDisplayedAtColumnNameAndRowNumber(WebDriver driver, String tableID, String columnName, String rowIndex, String expectedValue) {
+		int columnNameIndex = getElementSize(driver, BasePageUI.DYNAMIC_TABLE_COLUMN_NAME_SIBLING, tableID, columnName) + 1;
+		String actualValue = getElementText(driver, BasePageUI.TEXTBOX_AT_COLUMN_AND_ROW_INDEX, rowIndex, String.valueOf(columnNameIndex));
+		return actualValue.equals(expectedValue);
+	}
+
 
 }

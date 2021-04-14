@@ -4,8 +4,8 @@ import commons.BasePage;
 
 public class UserData extends BasePage {
 	public static class Login {
-		public static String userID = "";
-		public static String password = "";
+		public static String userID = "mngr320181";
+		public static String password = "mEqYnyn";
 		public static String newPassword = "test123!@#";
 	}
 

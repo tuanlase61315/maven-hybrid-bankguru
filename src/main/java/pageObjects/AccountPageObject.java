@@ -20,7 +20,7 @@ public class AccountPageObject extends BasePage{
 	
 	public String getAccountInfoByText(String itemText) {
 		waitForAllElementVisible(driver, AccountPageUI.DYNAMIC_ACCOUNT_INFO_BY_TEXT, itemText);
-		return getTextElement(driver, AccountPageUI.DYNAMIC_ACCOUNT_INFO_BY_TEXT, itemText);
+		return getElementText(driver, AccountPageUI.DYNAMIC_ACCOUNT_INFO_BY_TEXT, itemText);
 	}
 
 	public AccountPageObject acceptAlertInEditAccount(WebDriver driver2) {
